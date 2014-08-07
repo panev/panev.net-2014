@@ -1,0 +1,16 @@
+footer {
+	color: $light-gray;
+	height: 30px;
+	float: right;
+	bottom: 30px;
+
+	& a,
+	& a:hover {
+		text-decoration: underline;
+	}
+
+	& p {
+		font-size: 16px;
+		text-align: right;
+	}
+} 

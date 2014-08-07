@@ -1,0 +1,69 @@
+@media (max-width: 1100px) { 
+
+
+	.apex-this .nmi-1,
+	.apex-this .nmi-2,
+	.apex-this .nmi-3,
+	.apex-this .nmi-4,
+	.apex-this .nmi-5,
+	.apex-this .nmi-6,
+	.apex-this .nmi-7,
+	.apex-this .nmi-8,
+	.apex-this .nmi-9,
+	.apex-this .nmi-10,
+	.apex-this .nmi-11,
+	.apex-this .nmi-12,
+	.apex-this .nmi-13,
+	.apex-this .nmi-14 {
+		display: inline-block;
+		width: auto;
+		float: left;
+	}
+
+	.apex-this .push-1, 
+	.apex-this .push-2, 
+	.apex-this .push-3, 
+	.apex-this .push-4, 
+	.apex-this .push-5, 
+	.apex-this .push-6, 
+	.apex-this .push-7, 
+	.apex-this .push-8, 
+	.apex-this .push-9, 
+	.apex-this .push-10,
+	.apex-this .push-11,
+	.apex-this .push-12,
+	.apex-this .push-13,
+	.apex-this .push-14 {
+		left: 10px;
+	}
+ 
+	.apex-this,
+	.apex-this .contacts-container {
+		width: 100%;
+		margin: 0px;
+	}
+
+	.contacts-container .contacts-info {
+		width: 60%;
+	}
+
+	.contacts-container .contacts-info,
+	.contacts-container .contacts-details {
+		top:0;
+		margin: 20px;
+	}
+
+	header nav {
+		display: none!important;
+	}
+
+	header h1.nmi-3 {
+		margin-left: 30px;
+	}
+
+}
+
+@media (max-width: 780px) {
+
+
+}

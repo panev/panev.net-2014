@@ -1,0 +1,166 @@
+/*sizes and tweaks*/
+$header-height: 84px;
+$container-height: calc(100% - #{$header-height});
+
+/*color variables*/
+$main-cyan: #20c4f4;
+$dark-cyan: #197d9a;
+$light-cyan: #58d3f7;
+
+$light-gray: #c2c2c2;
+$superlight-gray: #f3f3f3;
+$dark-gray: #505050; 
+
+
+/*selector variables*/
+$nav-items: '.nav-projects, .nav-about, .nav-contact';
+$nav-afters:'.nav-projects:after, .nav-about:after, .nav-contact:after';
+$contacts-contents: '.contacts-info, .contacts-details';
+
+body ::selection { 
+	background: $dark-cyan;
+	color: #fff;
+}
+
+body ::-moz-selection { 
+	background: $dark-cyan; 
+	color: #fff; 
+} 
+
+/* helper classes */
+
+.such-height {
+	height: 100%;
+}
+
+.align-vertical {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	transform-origin: center;
+}
+
+.align-horizontal {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	transform-origin: center;
+}
+
+.light-cyan-shim {
+	height: 100%;
+	background-color: $light-cyan;
+	transform-origin: top; 
+	top: 0; bottom: 0; 	left: 0; right: 0; /* начи, лудница. */
+	position: absolute;
+	z-index: 0;
+}
+
+.current {
+	background-color: $light-cyan;
+}
+
+.hero-h2 {
+	font-size: 60px;
+	color: $main-cyan;
+	text-align: center;
+	margin: 40px 0 100px 0;
+}
+
+hr {
+	background: rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-top: 1px dashed rgba(255, 255, 255, 0.7);
+	width: 150%;
+	transition: 0.3s;
+	transform: translate(-18px, -25px) scale(0, 1);
+}
+
+.vr-dash {
+	height: 500px;
+	width: 30px;
+	border-right: 1px dashed $light-gray;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: inline;
+	float: left;
+	margin-top: 50px;
+}
+
+.container {
+	height: #{$container-height};
+	height: -webkit-#{$container-height};
+	height: -moz-#{$container-height};
+	height: -ms-#{$container-height};
+}
+
+.contacts-shim-collapse {
+	animation: contacts-collapse 1s;
+	transform: scale(1, 1);
+}
+
+.contacts-shim-appear {
+	animation: fade-in70 1.5s;
+	opacity: 1;
+}
+
+.contacts-shim-appear-late {
+	animation: fade-in70 1.8s;
+	opacity: 1;
+}
+
+.projects-greeter-appear {
+	animation: fade-in70 1s;
+	opacity: 1;
+}
+
+html, body, 
+h1, h2, h3, h4, h5,
+hr,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a,
+a:hover {
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	line-height: 1.6;
+	font-size: 19px;
+	text-align: justify;
+}
+
+body {
+	font-family: 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
+	font-size: 16px;
+	overflow-y: scroll;
+}
+
+h2 {
+	font-family: 'bebas-regular';
+	font-weight: 400;
+	font-size: 30px;
+}
+
+@font-face {
+    font-family: 'bebas-regular';
+    src: url('../fonts/BebasNeue-webfontREG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+	display: inline-block;
+}

@@ -1,0 +1,430 @@
+.hello-splash {
+	width: 100%;
+	height: 460px;
+	text-align: center;
+	position: relative;
+
+	& .hero-h2 {
+		margin: 140px 0 20px 0;
+		width: 100%;
+		animation: fade-in70 0.9s;
+	}
+
+	& h2 {
+		margin-bottom: 10px;
+		display: inline-block;
+		z-index: 9000;
+		position: relative;
+		animation: fade-in70 1.1s;
+		color: #fff;
+	}
+
+	& a {
+		margin-top: 30px;
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+
+.about-things-container {
+	width: 100%;
+	transform: translateY(-40px);
+	background-color: #fff;
+	opacity: 1;
+	animation: things-appear 1.7s;
+	display: inline-block;
+	padding: 80px 0;
+	& h2 {
+		color: $main-cyan;
+		margin-bottom: 20px;
+	}
+
+	& p {
+		color: $dark-gray;
+		text-align: justify;
+	}
+
+	&:hover {
+		.pic-gray {
+			opacity: 0;
+		}
+
+		.pic-full {
+			opacity: 0.8;
+		}
+	}
+}
+
+.about-me-pic {
+	height: 220px;
+	position: relative;
+
+	& div {
+		position: absolute;
+		width: 220px;
+		height: 220px;
+		background-image: url('../images/moi.jpg');
+		transition: 0.3s;
+	}
+
+	& .pic-gray {
+		opacity: 0.8;
+		background-position: 0px 0px;
+
+	}
+
+	& .pic-full {
+		background-position: 0px -220px;
+		opacity: 0;
+	}
+}
+
+.social-sprite {
+
+	margin-left: -10px;
+	margin-top: 10px;
+
+	& a {
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		position: relative;
+		& .gray-social {
+			background-position-y: 0px; 
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		& .full-social {
+			background-position-y: -50px;
+			opacity: 0;
+			transform: scale(0);
+		}
+
+		&:hover {
+
+			& .full-social {
+				opacity: 1;
+				transform: scale(1);
+			}
+
+			& .gray-social {
+				opacity: 0;
+				transform: scale(0);
+			}
+		}
+
+	}
+
+	& span {
+		background-image: url('../images/social-sprite.svg');
+		background-size: 160px 110px;
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		position: absolute;
+		transition: 0.3s;
+	}
+}
+
+a[href="http://twitter.com/todorpanev"] span {
+	background-position-x: 0px;
+}
+
+a[href="http://bg.linkedin.com/in/todorpanev"] span {
+	background-position-x: -50px;
+}
+
+a[href="https://www.behance.net/panev"] span {
+	background-position-x: -100px;
+}
+
+
+
+.about-skill {
+	padding: 55px 0 55px 0;
+	display: inline-block;
+	opacity: 0.65;
+	transition: 0.55s;
+
+	& .vr-dash {
+		height: 250px;
+		margin-top: 0;
+	}
+
+	& h2 {
+		margin: 40px 0 15px 0;
+		color: $main-cyan;
+	}
+
+	& .about-ill {
+
+		height: 250px;
+
+		& img {
+			position: absolute;
+		}
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:hover .skill-cog {
+		animation: skill-cog-rotate 3.6s infinite linear;
+	}
+
+	&:hover .dot-1 { 
+		animation: scale-up-down 0.5s;
+		animation-delay: 0s;
+	}
+
+	&:hover .dot-2 { 
+		animation: scale-up-down 0.75s;
+		animation-delay: 0.3s;
+	}
+
+	&:hover .dot-3, { 
+		animation: scale-up-down 1.2s;
+		animation-delay: 0.55s;
+	}
+
+	&:hover .dot-4 { 
+		animation: scale-up-down 0.5s;
+		animation-delay: 0.55s;
+	}
+
+	&:hover .dot-5 { 
+		animation: scale-up-down 0.45s;
+		animation-delay: 0.7s;
+	}
+
+	&:hover .dot-6 { 
+		animation: scale-up-down 0.7s;
+		animation-delay: 1.1s
+	}
+
+	&:hover .dot-7 { 
+		animation: scale-up-down 1.1s;
+		animation-delay: 1.15s
+	}
+
+	&:hover .dot-8 { 
+		animation: scale-up-down 0.6s;
+		animation-delay: 1.0s
+	}
+
+	&:hover .brand-dot-1 {
+		animation: brand-dot-scale 2.1s infinite;
+		animation-delay: 0.4s;
+		opacity: 1;
+	}
+
+	&:hover .brand-dot-2 {
+		animation: brand-dot-scale 1.5s infinite;
+		opacity: 0.7
+	}
+
+	&:hover .brand-dot-3 {
+		animation: brand-dot-rotate 2.5s infinite linear;
+		transform-origin: center;
+		opacity: 0.7;
+	}
+
+	&:hover .good-line-1 {
+		animation: scale-up-y 0.30s;
+		animation-delay: 0.15s;
+		transform: scaleY(1.0);
+	}
+
+	&:hover .good-line-2 {
+		animation: scale-up-x 0.30s;
+		animation-delay: 0.30s;
+		transform: scaleX(1.0);
+	}
+
+	&:hover .good-cross {
+		animation: good-cross 0.5s;
+		animation-delay: 0.50s;
+		transform: rotate(0deg);
+	}
+
+	&:hover .good-buttons {
+		animation: good-buttons 0.5s, good-buttons-2 0.5s;
+		animation-delay: 0.49s, 0.50s;
+		transform: rotate(145deg);
+		opacity: 0;
+	}
+}
+
+.good-line-1,
+.good-line-2 {
+	z-index: 100;
+	background-color: $main-cyan;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: scale(0.0);
+}
+
+.good-line-1 {
+	width: 30px;
+	height: 90px;
+	margin-top: -45px;
+	margin-left: -15px;
+	transform-origin: top!important;
+}
+
+.good-line-2 {
+	width: 90px;
+	height: 30px;
+	margin-top: -15px;
+	margin-left: -45px;
+	transform-origin: right!important;
+}
+
+.good-cross {
+	transform: rotate(-45deg);
+	height: 90px;
+	width: 90px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -45px;
+	z-index: 120;
+}
+
+.good-buttons {
+	z-index: 80;
+	transition: 0.50s;
+}
+
+.good-circle {
+	background-color: #fff;
+	border-radius: 50%;
+	width: 146px;
+	height: 146px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -73px;
+	margin-left: -73px;
+	z-index: 50;
+}
+
+
+.brand-dot-1,
+.brand-dot-2,
+.brand-dot-3 {
+	border-radius: 50%;
+	transform-origin: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: 0.5s;
+}
+
+.brand-dot-1 {
+	background-color: $main-cyan;
+	width: 64px;
+	height: 64px;
+	border: 3px solid #fff;
+	z-index: 100;
+	opacity: 1;
+	transform: translate(-50%, -50%) rotate(0deg) scale(1.0);
+}
+
+.brand-dot-2 {
+	background-color: $light-cyan;
+	width: 84px;
+	height: 84px;
+	z-index: 90;
+	opacity: 0.7;
+	transform: translate(-50%, -50%) scale(1.0);
+}
+
+.brand-dot-3 {
+	border: 2px dashed $light-cyan;
+	width: 88px;
+	height: 88px;
+	z-index: 80;
+	opacity: 0.7;
+	transform: translate(-50%, -50%) scale(1.0);
+}
+
+.dot-1,
+.dot-2,
+.dot-3,
+.dot-4,
+.dot-5,
+.dot-6,
+.dot-7,
+.dot-8 { 
+	background-color: $main-cyan;
+	position: absolute;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	z-index: 100;
+	transform: scale(0.0);
+	animation-iteration-count: infinite; 
+	opacity: 0;
+}
+
+.dot-1 {
+	top: 37px;
+	left: 68px;
+	width: 14px;
+	height: 14px;
+}
+
+.dot-2 {
+	top: 71px;
+	left: 82px;
+	width: 45px;
+	height: 45px;
+}
+
+.dot-3 {
+	top: 95px;
+	left: 23px;
+	width: 22px;
+	height: 22px;
+} 
+
+.dot-4 {
+	top: 143px;
+	left: 67px;
+	width: 14px;
+	height: 14px;
+}
+
+.dot-5 {
+	top: 130px;
+	left: 127px;
+	width: 23px;
+	height: 23px;
+}
+
+ .dot-6 {
+	top: 183px;
+	left: 66px;
+	width: 25px;
+	height: 25px;
+}
+
+.dot-7 {
+	top: 178px;
+	left: 137px;
+	width: 35px;
+	height: 35px;
+}
+
+.dot-8 {
+	top: 138px;
+	left: 179px;
+	width: 18px;
+	height: 18px;
+}

@@ -1,0 +1,273 @@
+.projects-greeter {
+	color: $light-cyan;
+	display: inline-block;
+	padding: 20px;
+	margin: 60px 0 10px 10px;
+	border-bottom: 1px dashed $light-cyan;
+	@extend .align-horizontal;
+	& h3 {
+		font-weight: lighter;
+	}
+}
+
+.project-container:last-child {
+	margin-bottom: 100px;
+}
+
+.project-container {
+	text-align: center;
+	position: relative;
+	height: 240px;
+	padding: 20px 0;
+	margin-top: 50px;
+	border-bottom: 1px dashed rgba(194,194,194,0);
+	border-top: 1px dashed rgba(194,194,194,0);	
+	transition: 0.35s;
+
+	&::after,
+	&::before {
+		height: 280px;
+		width: 40px;
+		content: '';
+		display: block;
+		position: absolute;
+		top: -1px;
+		transition: 0.35s;
+		opacity: 0;
+	}
+
+	&::before {
+		left: 0px;
+		border-left: 1px dashed $light-gray;
+	}
+
+	&::after {
+		right: 0px;
+		border-right: 1px dashed $light-gray;
+		border-top: 1px dashed $light-gray;
+		border-bottom: 1px dashed $light-gray;
+	}
+
+	& .hero-thumb {
+		height: 240px;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		z-index: 0;
+		opacity: 0.5;
+		transition: 0.55s;
+	}
+
+	& .gray-thumb, .full-thumb {
+		height: 150px;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 230px;
+		transition: 0.4s;
+	}
+
+	& .gray-thumb {
+		opacity: 0.5;
+		background-position: 0% 0%;
+		overflow: visible;
+	} 
+
+	& .full-thumb {
+		opacity: 0;
+		transform: translate(-50%, -50%);
+		background-position: 0% -100%;
+	}
+
+ 	& h1 {
+ 		text-transform: uppercase;
+ 		color: $dark-gray;
+ 		margin-left: 10px;
+ 		opacity: 0.6;
+ 		transform: translate(0px, 110px);
+ 		transition: 0.45s;
+ 		font-size: 30px;
+ 		font-weight: 300;
+ 	}
+
+	& .tags, p, .view-project {
+		position: absolute;
+		right: 0;
+		opacity: 0;
+	}
+ 
+	& .tags {
+		text-transform: uppercase;
+		color: $light-cyan;
+		top: 36px;
+		transition: 0.7s;
+		transform: translate(0%, 40%);
+	} 
+
+	& p {
+		width: 620px;
+		height: 82px;
+		text-align: justify;
+		color: $dark-gray;
+		top: 80px;
+		transform: translate(0%, 45%);
+		transition: 0.3s;
+	}
+
+	& .view-project {
+		font-size: 32px;
+		color: $light-cyan;
+		top: 195px;
+		border-bottom: 1px dashed rgba(88,211,247,0);
+		transform: translate(0%, 100%);
+
+		&::after {
+			content: '>';
+			transition: 0.3s;
+			position: relative;
+			left: 10px;
+			border-bottom: none!important;
+ 		}
+
+		&:hover {
+			border-bottom: 1px dashed rgba(88,211,247,1);
+		}
+
+			&:hover::after {
+				left: 20px;
+			}
+	}
+}
+ 
+.project-container:hover {
+
+	border-bottom-color: rgba(194,194,194,1);
+	border-top-color: rgba(194,194,194,1);
+
+	& .gray-thumb, .full-thumb {
+		transform: translate(-100px, -50%);
+	}
+
+	& .gray-thumb,
+	& .hero-thumb {
+		opacity: 0;
+	}
+
+	& .full-thumb {
+		opacity: 1;
+	}
+
+	& h1 {
+		opacity: 1;
+ 		transform: translate(0px, 0px);
+
+	}
+
+	& .tags, p, .view-project {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+
+	& .view-project {
+		animation: view-project-appear 0.6s;
+	}
+
+}
+
+.project-meta {
+	& .gray-thumb, .full-thumb {
+		width: 260px;
+		background-image: url('../images/thumbs/meta-double-thumb.png');
+	}
+}
+
+.project-jquerysofia {
+	& .gray-thumb, .full-thumb {
+		width: 260px;
+		height: 180px;
+		background-image: url('../images/thumbs/jquerysofia-double-thumb.png');
+	}
+}
+
+
+/* Projects CSS */
+
+.project-info {
+	margin-top: 60px;
+	text-align: right;
+
+	& h2 {
+
+		color: $main-cyan;
+		font-weight: 300;
+	}
+
+	& .project-date {
+		text-transform: uppercase;
+		color: $light-gray;
+		font-size: 0.9em;
+		margin-bottom: 25px;
+		&::before {
+			content: 'Compleated on: ';
+			text-transform: uppercase;
+		}
+	}
+
+	& p {
+		text-align: justify;
+	}
+
+	& a {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		margin-top: 20px;
+		display: inline-block;
+		transition: 0.3s;
+
+		&:hover {
+
+			border-bottom: 1px dashed;
+
+			&::after {
+				left: 5px;			
+			}
+
+			&::before {
+				left: -5px;
+			}
+		}
+
+		&::after,
+		&::before {
+			transition: 0.3s;
+			position: relative;
+			left: 0px;
+		}
+
+	}
+
+	& a.back-to-portfolio {
+		float: left;
+
+		&::before { 
+			content: '< ';
+		}
+	}
+
+	& a.visit-project {
+		color: $main-cyan;
+
+		&::after {
+			content: ' >';
+		}
+	}
+
+}
+
+.inner-projects-container {
+	margin-top: 60px;
+
+	& img {
+		margin-bottom: 30px;
+	}
+}
