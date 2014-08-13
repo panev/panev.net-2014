@@ -9,7 +9,7 @@ $light-cyan: #58d3f7;
 
 $light-gray: #c2c2c2;
 $superlight-gray: #f3f3f3;
-$dark-gray: #505050; 
+$dark-gray: #505050;
 
 
 /*selector variables*/
@@ -18,12 +18,12 @@ $nav-afters:'.nav-projects:after, .nav-about:after, .nav-contact:after';
 $contacts-contents: '.contacts-info, .contacts-details';
 
 body ::selection { 
-	background: $dark-cyan;
+	background: #f17db1;
 	color: #fff;
 }
 
 body ::-moz-selection { 
-	background: $dark-cyan; 
+	background: #f17db1; 
 	color: #fff; 
 } 
 
@@ -128,7 +128,8 @@ a:hover {
 	color: inherit;
 }
 
-a {
+a,
+nav a:hover {
 	text-decoration: none;
 }
 

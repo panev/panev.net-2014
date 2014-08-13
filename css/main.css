@@ -3,16 +3,16 @@
 /*color variables*/
 /*selector variables*/
 body ::-moz-selection {
-  background: #197d9a;
+  background: #f17db1;
   color: #fff;
 }
 body ::selection {
-  background: #197d9a;
+  background: #f17db1;
   color: #fff;
 }
 
 body ::-moz-selection {
-  background: #197d9a;
+  background: #f17db1;
   color: #fff;
 }
 
@@ -139,7 +139,8 @@ a:hover {
   color: inherit;
 }
 
-a {
+a,
+nav a:hover {
   text-decoration: none;
 }
 
@@ -1267,7 +1268,7 @@ a[href="https://www.behance.net/panev"] span {
 .project-container {
   position: relative;
   height: 240px;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-top: 50px;
   /* 	border-bottom: 1px dashed rgba(194,194,194,0);
   	border-top: 1px dashed rgba(194,194,194,0);	 */
