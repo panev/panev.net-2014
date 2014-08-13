@@ -6,8 +6,8 @@
 
         <aside class="project-info nmi-3 clearfix">
 
-            <h2>Meta Colours</h1>
-            <div class="project-date">05.07.2010</div>
+            <h2>Posters for Infragistics</h1>
+            <div class="project-date">12.02.2014</div>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -16,18 +16,17 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <a href="#" class="back-to-portfolio">Back</a>
-            <a href="#" class="visit-project">Visit Project</a>
+            <a href="portfolio.php" class="back-to-portfolio">Back</a>
         </aside>
 
-        <div class="nmi-1">
-            <div class="vr-dash"></div>
-        </div>
+        <section class="nmi-10 push-4 inner-projects-container">
 
-        <section class="nmi-10 inner-projects-container">
+            <img src="images/projects/igposters/project-igposters-all-vis.png">
 
-            <img src="">
+            <img src="images/projects/igposters/project-igposters-cooking.png">
+            <img src="images/projects/igposters/project-igposters-book.png">
+            <img src="images/projects/igposters/project-igposters-ux.png">
 
         </section>
-
+    
     <?php require 'footer.php'; ?>
