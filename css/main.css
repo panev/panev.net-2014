@@ -801,7 +801,7 @@ header nav a:hover hr {
   opacity: 0;
 }
 .about-things-container:hover .pic-full {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .about-me-pic {
@@ -886,7 +886,8 @@ a[href="https://www.behance.net/panev"] span {
 }
 
 .about-skill {
-  padding: 55px 0 55px 0;
+  width: 100%;
+  padding: 80px 0 55px 0;
   display: inline-block;
   opacity: 0.65;
   -webkit-transition: 0.55s;
@@ -1264,46 +1265,30 @@ a[href="https://www.behance.net/panev"] span {
 }
 
 .project-container {
-  text-align: center;
   position: relative;
   height: 240px;
   padding: 20px 0;
   margin-top: 50px;
-  border-bottom: 1px dashed rgba(194, 194, 194, 0);
-  border-top: 1px dashed rgba(194, 194, 194, 0);
+  /* 	border-bottom: 1px dashed rgba(194,194,194,0);
+  	border-top: 1px dashed rgba(194,194,194,0);	 */
   -webkit-transition: 0.35s;
   transition: 0.35s;
 }
 .project-container::after, .project-container::before {
-  height: 280px;
-  width: 40px;
+  height: 2px;
+  width: 100%;
   content: '';
   display: block;
   position: absolute;
-  top: -1px;
   -webkit-transition: 0.35s;
   transition: 0.35s;
   opacity: 0;
 }
 .project-container::before {
-  left: 0px;
-  border-left: 1px dashed #c2c2c2;
+  top: 0px;
 }
 .project-container::after {
-  right: 0px;
-  border-right: 1px dashed #c2c2c2;
-  border-top: 1px dashed #c2c2c2;
-  border-bottom: 1px dashed #c2c2c2;
-}
-.project-container .hero-thumb {
-  height: 240px;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  z-index: 0;
-  opacity: 0.5;
-  -webkit-transition: 0.55s;
-  transition: 0.55s;
+  bottom: 0px;
 }
 .project-container .gray-thumb, .project-container .full-thumb {
   height: 150px;
@@ -1331,7 +1316,7 @@ a[href="https://www.behance.net/panev"] span {
 .project-container h1 {
   text-transform: uppercase;
   color: #505050;
-  margin-left: 10px;
+  margin-left: 478px;
   opacity: 0.6;
   -webkit-transform: translate(0px, 110px);
   -ms-transform: translate(0px, 110px);
@@ -1339,7 +1324,7 @@ a[href="https://www.behance.net/panev"] span {
   -webkit-transition: 0.45s;
   transition: 0.45s;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .project-container .tags, .project-container p, .project-container .view-project {
   position: absolute;
@@ -1376,6 +1361,7 @@ a[href="https://www.behance.net/panev"] span {
   -webkit-transform: translate(0%, 100%);
   -ms-transform: translate(0%, 100%);
   transform: translate(0%, 100%);
+  text-decoration: none;
 }
 .project-container .view-project::after {
   content: '>';
@@ -1424,6 +1410,7 @@ a[href="https://www.behance.net/panev"] span {
   animation: view-project-appear 0.6s;
 }
 
+/* project thumbs individual sprite selectors */
 .project-meta .gray-thumb, .project-meta .full-thumb {
   width: 260px;
   background-image: url("../images/thumbs/meta-double-thumb.png");
@@ -1435,10 +1422,17 @@ a[href="https://www.behance.net/panev"] span {
   background-image: url("../images/thumbs/jquerysofia-double-thumb.png");
 }
 
+.project-igposters .gray-thumb, .project-igposters .full-thumb {
+  width: 260px;
+  height: 180px;
+  background-image: url("../images/thumbs/igposters-double-thumb.png");
+}
+
 /* Projects CSS */
 .project-info {
   margin-top: 60px;
   text-align: right;
+  position: fixed;
 }
 .project-info h2 {
   color: #20c4f4;
@@ -1464,6 +1458,7 @@ a[href="https://www.behance.net/panev"] span {
   display: inline-block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-decoration: none;
 }
 .project-info a:hover {
   border-bottom: 1px dashed;
@@ -1497,7 +1492,17 @@ a[href="https://www.behance.net/panev"] span {
   margin-top: 60px;
 }
 .inner-projects-container img {
-  margin-bottom: 30px;
+  margin-bottom: 150px;
+}
+
+.vr-dash-container {
+  position: fixed;
+}
+
+img[src="images/projects/igposters/project-igposters-cooking.png"],
+img[src="images/projects/igposters/project-igposters-book.png"],
+img[src="images/projects/igposters/project-igposters-ux.png"] {
+  border-top: 2px dashed #c2c2c2;
 }
 
 footer {

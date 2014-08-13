@@ -15,49 +15,33 @@
 }
 
 .project-container {
-	text-align: center;
 	position: relative;
 	height: 240px;
 	padding: 20px 0;
 	margin-top: 50px;
-	border-bottom: 1px dashed rgba(194,194,194,0);
-	border-top: 1px dashed rgba(194,194,194,0);	
+/* 	border-bottom: 1px dashed rgba(194,194,194,0);
+	border-top: 1px dashed rgba(194,194,194,0);	 */
 	transition: 0.35s;
 
-	&::after,
+ 	&::after,
 	&::before {
-		height: 280px;
-		width: 40px;
+		height: 2px;
+		width: 100%;
 		content: '';
 		display: block;
 		position: absolute;
-		top: -1px;
 		transition: 0.35s;
 		opacity: 0;
 	}
 
 	&::before {
-		left: 0px;
-		border-left: 1px dashed $light-gray;
+		top: 0px;
 	}
 
 	&::after {
-		right: 0px;
-		border-right: 1px dashed $light-gray;
-		border-top: 1px dashed $light-gray;
-		border-bottom: 1px dashed $light-gray;
+		bottom: 0px;
 	}
-
-	& .hero-thumb {
-		height: 240px;
-		position: absolute;
-		top: 20px;
-		left: 0;
-		z-index: 0;
-		opacity: 0.5;
-		transition: 0.55s;
-	}
-
+ 
 	& .gray-thumb, .full-thumb {
 		height: 150px;
 		transform: translate(-50%, -50%);
@@ -82,12 +66,12 @@
  	& h1 {
  		text-transform: uppercase;
  		color: $dark-gray;
- 		margin-left: 10px;
+ 		margin-left: 478px;
  		opacity: 0.6;
  		transform: translate(0px, 110px);
  		transition: 0.45s;
  		font-size: 30px;
- 		font-weight: 300;
+ 		font-weight: 400;
  	}
 
 	& .tags, p, .view-project {
@@ -95,7 +79,7 @@
 		right: 0;
 		opacity: 0;
 	}
- 
+
 	& .tags {
 		text-transform: uppercase;
 		color: $light-cyan;
@@ -120,6 +104,7 @@
 		top: 195px;
 		border-bottom: 1px dashed rgba(88,211,247,0);
 		transform: translate(0%, 100%);
+		text-decoration: none;
 
 		&::after {
 			content: '>';
@@ -140,7 +125,6 @@
 }
  
 .project-container:hover {
-
 	border-bottom-color: rgba(194,194,194,1);
 	border-top-color: rgba(194,194,194,1);
 
@@ -174,6 +158,8 @@
 
 }
 
+
+/* project thumbs individual sprite selectors */
 .project-meta {
 	& .gray-thumb, .full-thumb {
 		width: 260px;
@@ -189,12 +175,21 @@
 	}
 }
 
+.project-igposters {
+	& .gray-thumb, .full-thumb {
+		width: 260px;
+		height: 180px;
+		background-image: url('../images/thumbs/igposters-double-thumb.png');
+	}
+}
+
 
 /* Projects CSS */
 
 .project-info {
 	margin-top: 60px;
 	text-align: right;
+	position: fixed;
 
 	& h2 {
 
@@ -223,9 +218,9 @@
 		margin-top: 20px;
 		display: inline-block;
 		transition: 0.3s;
+		text-decoration: none;
 
 		&:hover {
-
 			border-bottom: 1px dashed;
 
 			&::after {
@@ -268,6 +263,16 @@
 	margin-top: 60px;
 
 	& img {
-		margin-bottom: 30px;
+		margin-bottom: 150px;
 	}
+}
+
+.vr-dash-container {
+	position: fixed;
+}
+
+img[src="images/projects/igposters/project-igposters-cooking.png"],
+img[src="images/projects/igposters/project-igposters-book.png"],
+img[src="images/projects/igposters/project-igposters-ux.png"] {
+	border-top: 2px dashed $light-gray;
 }
