@@ -137,6 +137,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+a:focus,
+a:active {
+	outline: none; /* Mostly for Firefox' pesky outline */
+}
+
 p {
 	line-height: 1.6;
 	font-size: 19px;
