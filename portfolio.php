@@ -54,7 +54,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="project-infragistics-posters.php">View Project</a>
+            <a class="view-project" href="project-infragistics-posters.php">View Project<span> ></span></a>
 
         </div>
 
