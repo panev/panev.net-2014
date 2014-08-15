@@ -798,12 +798,6 @@ header nav a:hover hr {
   color: #505050;
   text-align: justify;
 }
-.about-things-container:hover .pic-gray {
-  opacity: 0;
-}
-.about-things-container:hover .pic-full {
-  opacity: 0.9;
-}
 
 .about-me-pic {
   height: 220px;
@@ -820,10 +814,6 @@ header nav a:hover hr {
 .about-me-pic .pic-gray {
   opacity: 0.8;
   background-position: 0px 0px;
-}
-.about-me-pic .pic-full {
-  background-position: 0px -220px;
-  opacity: 0;
 }
 
 .social-sprite {
@@ -1268,28 +1258,34 @@ a[href="https://www.behance.net/panev"] span {
 .project-container {
   position: relative;
   height: 240px;
-  padding: 30px 0;
-  margin-top: 50px;
-  /* 	border-bottom: 1px dashed rgba(194,194,194,0);
-  	border-top: 1px dashed rgba(194,194,194,0);	 */
+  padding: 30px 0 30px 0;
+  margin-top: 20px;
   -webkit-transition: 0.35s;
   transition: 0.35s;
 }
 .project-container::after, .project-container::before {
-  height: 2px;
-  width: 100%;
+  height: 1px;
+  width: 34%;
   content: '';
   display: block;
   position: absolute;
   -webkit-transition: 0.35s;
   transition: 0.35s;
   opacity: 0;
+  -webkit-transform: scaleX(3);
+  -ms-transform: scaleX(3);
+  transform: scaleX(3);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
 }
 .project-container::before {
   top: 0px;
+  border-top: 1px dashed #c2c2c2;
 }
 .project-container::after {
   bottom: 0px;
+  border-bottom: 1px dashed #c2c2c2;
 }
 .project-container .gray-thumb, .project-container .full-thumb {
   height: 150px;
@@ -1298,7 +1294,7 @@ a[href="https://www.behance.net/panev"] span {
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  left: 230px;
+  left: 285px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1347,7 +1343,7 @@ a[href="https://www.behance.net/panev"] span {
   height: 82px;
   text-align: justify;
   color: #505050;
-  top: 80px;
+  top: 90px;
   -webkit-transform: translate(0%, 45%);
   -ms-transform: translate(0%, 45%);
   transform: translate(0%, 45%);
@@ -1357,36 +1353,39 @@ a[href="https://www.behance.net/panev"] span {
 .project-container .view-project {
   font-size: 32px;
   color: #58d3f7;
-  top: 195px;
+  top: 220px;
   border-bottom: 1px dashed rgba(88, 211, 247, 0);
   -webkit-transform: translate(0%, 100%);
   -ms-transform: translate(0%, 100%);
   transform: translate(0%, 100%);
   text-decoration: none;
 }
-.project-container .view-project::after {
-  content: '>';
+.project-container .view-project span {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
-  left: 10px;
-  border-bottom: none !important;
+  display: inline-block;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  border-bottom: none;
 }
 .project-container .view-project:hover {
   border-bottom: 1px dashed #58d3f7;
 }
-.project-container .view-project:hover::after {
-  left: 20px;
+.project-container .view-project:hover span {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 
-.project-container:hover {
-  border-bottom-color: #c2c2c2;
-  border-top-color: #c2c2c2;
+.project-container:hover::before, .project-container:hover::after {
+  opacity: 1;
 }
 .project-container:hover .gray-thumb, .project-container:hover .full-thumb {
-  -webkit-transform: translate(-100px, -50%);
-  -ms-transform: translate(-100px, -50%);
-  transform: translate(-100px, -50%);
+  -webkit-transform: translate(-180px, -50%);
+  -ms-transform: translate(-180px, -50%);
+  transform: translate(-180px, -50%);
 }
 .project-container:hover .gray-thumb, .project-container:hover .hero-thumb {
   opacity: 0;
@@ -1414,19 +1413,19 @@ a[href="https://www.behance.net/panev"] span {
 /* project thumbs individual sprite selectors */
 .project-meta .gray-thumb, .project-meta .full-thumb {
   width: 260px;
-  background-image: url("../images/thumbs/meta-double-thumb.png");
+  background-image: url("../images/projects/metacolors/meta-double-thumb.png");
 }
 
 .project-jquerysofia .gray-thumb, .project-jquerysofia .full-thumb {
   width: 260px;
   height: 180px;
-  background-image: url("../images/thumbs/jquerysofia-double-thumb.png");
+  background-image: url("../images/projects/jquerysofia/jquerysofia-double-thumb.png");
 }
 
 .project-igposters .gray-thumb, .project-igposters .full-thumb {
   width: 260px;
   height: 180px;
-  background-image: url("../images/thumbs/igposters-double-thumb.png");
+  background-image: url("../images/projects/igposters/igposters-double-thumb.png");
 }
 
 /* Projects CSS */

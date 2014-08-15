@@ -44,16 +44,6 @@
 		color: $dark-gray;
 		text-align: justify;
 	}
-
-	&:hover {
-		.pic-gray {
-			opacity: 0;
-		}
-
-		.pic-full {
-			opacity: 0.9;
-		}
-	}
 }
 
 .about-me-pic {
@@ -71,12 +61,6 @@
 	& .pic-gray {
 		opacity: 0.8;
 		background-position: 0px 0px;
-
-	}
-
-	& .pic-full {
-		background-position: 0px -220px;
-		opacity: 0;
 	}
 }
 
@@ -138,7 +122,6 @@ a[href="http://bg.linkedin.com/in/todorpanev"] span {
 a[href="https://www.behance.net/panev"] span {
 	background-position-x: -100px;
 }
-
 
 .about-skill {
 	width: 100%;

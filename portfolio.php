@@ -18,7 +18,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project</a>
+            <a class="view-project" href="#">View Project<span> ></span></a>
 
         </div>
 
@@ -36,7 +36,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project</a>
+            <a class="view-project" href="#">View Project<span> ></span></a>
 
         </div>
 
@@ -72,7 +72,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project</a>
+            <a class="view-project" href="#">View Project<span> ></span></a>
 
         </div>
 
@@ -90,7 +90,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project</a>
+            <a class="view-project" href="#">View Project<span> ></span></a>
 
         </div>
         

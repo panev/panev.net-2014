@@ -57,7 +57,7 @@
 	    		<div class="dot-6"></div>
 	    		<div class="dot-7"></div>
 	    		<div class="dot-8"></div>
-	    		<img src="images/about-ill-uiux.svg">
+	    		<img src="images/about-ills/about-ill-uiux.svg">
 	    	</div>
 
 
@@ -73,8 +73,8 @@
 	    <section class="about-skill skill-font-end">
 
 	    	<div class="nmi-3 about-ill push-5">
-	    		<img class="skill-cog" src="images/about-ill-frontend-cog.svg">
-	    		<img src="images/about-ill-frontend-vial.svg">
+	    		<img class="skill-cog" src="images/about-ills/about-ill-frontend-cog.svg">
+	    		<img src="images/about-ills/about-ill-frontend-vial.svg">
 	    	</div>
 
 	    	<div class="skill-info nmi-6 push-5">
@@ -93,7 +93,7 @@
 	    		<div class="brand-dot-1"></div>
 	    		<div class="brand-dot-2"></div>
 	    		<div class="brand-dot-3"></div>
-	    		<img src="images/about-ill-branding.svg">
+	    		<img src="images/about-ills/about-ill-branding.svg">
 	    	</div>
 
 	    	<div class="skill-info nmi-6">
@@ -113,8 +113,8 @@
 			    		<div class="good-line-2"></div>
 		    		</div>
 	    		<div class="good-circle"></div>
-	    		<img class="good-buttons" src="images/about-ill-good-buttons.svg">
-	    		<img src="images/about-ill-good-base.svg">
+	    		<img class="good-buttons" src="images/about-ills/about-ill-good-buttons.svg">
+	    		<img src="images/about-ills/about-ill-good-base.svg">
 	    	</div>
 
 	    	<div class="skill-info nmi-6 push-5">
