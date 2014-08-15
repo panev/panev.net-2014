@@ -650,6 +650,8 @@ header h1 {
   -ms-transform-origin: center;
   transform-origin: center;
   width: 100px;
+  text-transform: uppercase;
+  font-family: 'bebas-regular';
 }
 
 header nav {
@@ -661,6 +663,8 @@ header nav {
   display: inline-block;
   margin-left: 50px;
   font-size: 24px;
+  font-family: 'bebas-regular';
+  text-transform: uppercase;
   padding: 0 15px;
   -webkit-transition: 0.35s;
   transition: 0.35s;

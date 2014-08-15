@@ -92,6 +92,8 @@ header {
 		font-weight: 300;
 		transform-origin: center;
 		width: 100px;
+		text-transform: uppercase;
+		font-family: 'bebas-regular';
 	}
 
 	header nav {
@@ -103,6 +105,8 @@ header {
 			display: inline-block;
 			margin-left: 50px;
 			font-size: 24px;
+			font-family: 'bebas-regular';
+			text-transform: uppercase;
 			padding: 0 15px;
 			transition: 0.35s;
 			transform: translate(0px, 0px);
