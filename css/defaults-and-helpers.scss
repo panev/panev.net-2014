@@ -115,6 +115,13 @@ hr {
 	opacity: 1;
 }
 
+@font-face {
+    font-family: 'bebas-regular';
+    src: url('../fonts/BebasNeue-webfontREG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, 
 h1, h2, h3, h4, h5,
 hr,
@@ -158,13 +165,6 @@ h2 {
 	font-family: 'bebas-regular';
 	font-weight: 400;
 	font-size: 30px;
-}
-
-@font-face {
-    font-family: 'bebas-regular';
-    src: url('../fonts/BebasNeue-webfontREG.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 img {
