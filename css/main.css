@@ -126,6 +126,12 @@ hr {
   opacity: 1;
 }
 
+@font-face {
+  font-family: 'bebas-regular';
+  src: url("../fonts/BebasNeue-webfontREG.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html, body,
 h1, h2, h3, h4, h5,
 hr,
@@ -172,12 +178,6 @@ h2 {
   font-size: 30px;
 }
 
-@font-face {
-  font-family: 'bebas-regular';
-  src: url("../fonts/BebasNeue-webfontREG.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 img {
   display: inline-block;
 }
@@ -841,18 +841,17 @@ header nav a:hover hr {
   height: 60px;
   display: inline-block;
   position: relative;
-}
-.social-sprite a .gray-social {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-.social-sprite a .full-social {
-  opacity: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+  /* 
+  		& .gray-social {
+  			opacity: 1;
+  			transform: scale(1);
+  		}
+  
+  		& .full-social {
+  			opacity: 0;
+  			transform: scale(0);
+  		}
+   */
 }
 .social-sprite a:hover .full-social {
   opacity: 1;
@@ -868,8 +867,8 @@ header nav a:hover hr {
 }
 .social-sprite span {
   background-image: url("../images/social-sprite.svg");
-  -webkit-background-size: 160px 110px;
-  background-size: 160px 110px;
+  -webkit-background-size: 160px 160px;
+  background-size: 160px 160px;
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -1272,6 +1271,13 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 .projects-greeter h3 {
   font-weight: lighter;
+}
+
+.portfolio-greeter {
+  text-align: center;
+  display: block;
+  margin: 150px 0;
+  color: #20c4f4;
 }
 
 .project-container:last-child {

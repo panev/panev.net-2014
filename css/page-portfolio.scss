@@ -10,6 +10,13 @@
 	}
 }
 
+.portfolio-greeter {
+	text-align: center;
+	display: block;
+	margin: 150px 0;
+	color: $main-cyan;
+}
+
 .project-container:last-child {
 	margin-bottom: 100px;
 }

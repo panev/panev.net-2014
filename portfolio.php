@@ -4,6 +4,8 @@
 
     <div class="apex-this">
 
+        <h2 class="portfolio-greeter">~ Selected projects I've completed ~</h2>
+
         <div class="project-container project-meta nmi-14">
 
             <div class="gray-thumb"></div>
@@ -40,7 +42,7 @@
 
         </div>
 
-        <div class="project-container project-igposters nmi-14">
+        <div class="project-container project-igposters nmi-14" id="posters">
 
             <div class="gray-thumb"></div>
 

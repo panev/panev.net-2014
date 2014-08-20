@@ -3,7 +3,6 @@
 <?php require 'header.php'; ?>
 
     <div class="apex-this">
-
         <aside class="project-info nmi-3 clearfix">
 
             <h2>Posters for Infragistics</h1>
@@ -16,7 +15,7 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <a href="portfolio.php" class="back-to-portfolio">Back</a>
+            <a href="portfolio.php#posters" class="back-to-portfolio">Back</a>
         </aside>
 
         <section class="nmi-10 push-4 inner-projects-container">

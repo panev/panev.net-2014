@@ -76,7 +76,7 @@
 		height: 60px;
 		display: inline-block;
 		position: relative;
-
+/* 
 		& .gray-social {
 			opacity: 1;
 			transform: scale(1);
@@ -86,7 +86,7 @@
 			opacity: 0;
 			transform: scale(0);
 		}
-
+ */
 		&:hover {
 
 			& .full-social {
@@ -104,7 +104,7 @@
 
 	& span {
 		background-image: url('../images/social-sprite.svg');
-		background-size: 160px 110px;
+		background-size: 160px 160px;
 		width: 60px;
 		height: 60px;
 		display: inline-block;
