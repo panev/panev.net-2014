@@ -13,9 +13,13 @@ $dark-gray: #505050;
 
 
 /*selector variables*/
-$nav-items: '.nav-projects, .nav-about, .nav-contact';
-$nav-afters:'.nav-projects:after, .nav-about:after, .nav-contact:after';
+$nav-items: '.nav-projects, .nav-hello, .nav-contact';
+$nav-afters:'.nav-projects:after, .nav-hello:after, .nav-contact:after';
 $contacts-contents: '.contacts-info, .contacts-details';
+
+/*other variables*/
+$bebas: 'bebas-regular' 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
+$pt-sans: 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
 
 body ::selection { 
 	background: #f17db1;

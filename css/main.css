@@ -2,6 +2,7 @@
 /*sizes and tweaks*/
 /*color variables*/
 /*selector variables*/
+/*other variables*/
 body ::-moz-selection {
   background: #f17db1;
   color: #fff;
@@ -566,7 +567,7 @@ img {
   line-height: 1;
   top: 25px;
   right: 35px;
-  font-family: 'PT Sans Narrow';
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.35s;
@@ -602,9 +603,19 @@ header {
   z-index: 9000;
   -webkit-transition: 0.35s;
   transition: 0.35s;
+  -webkit-animation: fade-in70 0.5s;
+  animation: fade-in70 0.5s;
 }
 
-.nav-active {
+.hello .nav-hello {
+  background-color: #58d3f7;
+}
+
+.portfolio .nav-projects {
+  background-color: #58d3f7;
+}
+
+.contacts .nav-contact {
   background-color: #58d3f7;
 }
 
@@ -613,7 +624,7 @@ header {
   height: 84px;
   line-height: 84px;
   background-color: #20c4f4;
-  font-family: 'bebas-regular' 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
+  font-family: "bebas-regular" "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -657,19 +668,23 @@ header h1 {
   transform-origin: center;
   width: 100px;
   text-transform: uppercase;
-  font-family: 'bebas-regular';
+  font-family: "bebas-regular" "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
 }
 
 header nav {
-  text-align: right;
+  display: inline-block;
   height: 84px;
+  float: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 377px;
 }
 
-.nav-projects, .nav-about, .nav-contact {
+.nav-projects, .nav-hello, .nav-contact {
   display: inline-block;
   margin-left: 50px;
   font-size: 24px;
-  font-family: 'bebas-regular';
+  font-family: "bebas-regular" "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   padding: 0 15px;
   -webkit-transition: 0.35s;
@@ -679,7 +694,11 @@ header nav {
   transform: translate(0px, 0px);
 }
 
-.nav-projects:after, .nav-about:after, .nav-contact:after {
+.nav-hello {
+  margin-left: 0;
+}
+
+.nav-projects:after, .nav-hello:after, .nav-contact:after {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -688,7 +707,7 @@ header nav {
   font-size: 17px;
   text-transform: lowercase;
   line-height: 1;
-  font-family: 'PT Sans Narrow';
+  font-family: "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   color: #197d9a;
   width: 100px;
   text-align: center;
@@ -702,14 +721,14 @@ header nav {
   -webkit-transform: translateY(-10px) translateX(-14px);
   -ms-transform: translateY(-10px) translateX(-14px);
   transform: translateY(-10px) translateX(-14px);
-  content: 'almost ready';
+  content: 'salutaions!';
 }
 
-.nav-about:after {
+.nav-hello:after {
   -webkit-transform: translateY(-10px) translateX(-26px);
   -ms-transform: translateY(-10px) translateX(-26px);
   transform: translateY(-10px) translateX(-26px);
-  content: 'not ready yet';
+  content: 'view the latest';
 }
 
 .nav-contact:after {
@@ -721,7 +740,7 @@ header nav {
 
 a:hover .nav-projects,
 a:hover .nav-contact,
-a:hover .nav-about {
+a:hover .nav-hello {
   -webkit-transform: translate(0px, -10px);
   -ms-transform: translate(0px, -10px);
   transform: translate(0px, -10px);
@@ -735,7 +754,7 @@ a:hover .nav-projects:after {
   opacity: 1 !important;
 }
 
-a:hover .nav-about:after {
+a:hover .nav-hello:after {
   -webkit-transform: translateY(-30px) translateX(-26px);
   -ms-transform: translateY(-30px) translateX(-26px);
   transform: translateY(-30px) translateX(-26px);
@@ -750,7 +769,7 @@ a:hover .nav-contact:after {
 
 a:hover .nav-projects:after,
 a:hover .nav-contact:after,
-a:hover .nav-about:after {
+a:hover .nav-hello:after {
   opacity: 1;
 }
 
@@ -1252,7 +1271,7 @@ a[href="https://www.behance.net/panev"] .full-social {
   color: #fff;
   font-weight: 300;
   font-size: 25px;
-  font-family: 'bebas-regular';
+  font-family: "bebas-regular" "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
 }

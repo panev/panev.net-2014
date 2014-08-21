@@ -10,16 +10,10 @@
                 <span>Hi there!</span>
             </div>
 
-            <nav class="nmi-11">
-                <a href="hello.php">
-                    <span class="nav-about">Hello<hr></span>
-                </a>
-                <a href="portfolio.php">
-                    <span class="nav-projects">Portfolio<hr></span>
-                </a>
-                <a href="contacts.php">
-                    <span class="nav-contact nav-active">Contact<hr></span>
-                </a>
+            <nav>
+                <a href="hello.php" class="nav-hello">Hello</a>
+                <a href="portfolio.php" class="nav-projects">Portfolio</a>
+                <a href="contacts.php" class="nav-contact">Contact</a>
             </nav>
 
         </div>

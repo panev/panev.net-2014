@@ -18,7 +18,7 @@
 	line-height: 1;
 	top: 25px;
 	right: 35px;
-	font-family: 'PT Sans Narrow';
+	font-family: $pt-sans;
 	text-transform: uppercase;
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 	transition: 0.35s;
@@ -46,18 +46,28 @@ header {
 	height: $header-height;
 	z-index: 9000;
 	transition: 0.35s;
+	animation: fade-in70 0.5s;
 }
 
-	.nav-active {
+	.hello .nav-hello {
 		background-color: $light-cyan;
 	}
+
+	.portfolio .nav-projects {
+		background-color: $light-cyan;
+	}
+
+	.contacts .nav-contact {
+		background-color: $light-cyan;
+	}
+
 
 	.header-inner-wrap {
 		width: 100%;
 		height: $header-height;
 		line-height: $header-height;
 		background-color: $main-cyan;
-		font-family: 'bebas-regular' 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
+		font-family: $bebas;
 		color: #fff;
 		transition: 0.3s;
 		transform: translateY(0px);
@@ -93,23 +103,30 @@ header {
 		transform-origin: center;
 		width: 100px;
 		text-transform: uppercase;
-		font-family: 'bebas-regular';
+		font-family: $bebas;
 	}
 
 	header nav {
-		text-align: right;
+		display: inline-block;
 		height: $header-height;
+		float: right;
+		transition: 0.5s;
+		width: 377px;
 	}
 
 		#{$nav-items} {
 			display: inline-block;
 			margin-left: 50px;
 			font-size: 24px;
-			font-family: 'bebas-regular';
+			font-family: $bebas;
 			text-transform: uppercase;
 			padding: 0 15px;
 			transition: 0.35s;
 			transform: translate(0px, 0px);
+		}
+
+		.nav-hello {
+			margin-left: 0;
 		}
 
 		#{$nav-afters} {
@@ -120,7 +137,7 @@ header {
 			font-size: 17px;
 			text-transform: lowercase;
 			line-height: 1;
-			font-family: 'PT Sans Narrow';
+			font-family: $pt-sans;
 			color: $dark-cyan;
 			width: 100px;
 			text-align: center;
@@ -132,12 +149,12 @@ header {
 
 		.nav-projects:after {
 			transform: translateY(-10px) translateX(-14px);
-			content: 'almost ready';
+			content: 'salutaions!';
 		}
 
-		.nav-about:after {
+		.nav-hello:after {
 			transform: translateY(-10px) translateX(-26px);
-			content: 'not ready yet';
+			content: 'view the latest';
 		}
 
 		.nav-contact:after {
@@ -147,7 +164,7 @@ header {
 
 		a:hover .nav-projects,
 		a:hover .nav-contact,
-		a:hover .nav-about {
+		a:hover .nav-hello {
 			transform: translate(0px, -10px);
 			background-color: $main-cyan;
 		}
@@ -157,7 +174,7 @@ header {
 			opacity: 1!important;
 		}
 
-		a:hover .nav-about:after {
+		a:hover .nav-hello:after {
 			transform: translateY(-30px) translateX(-26px);
 			opacity: 1!important;
 		}
@@ -168,7 +185,7 @@ header {
 
 		a:hover .nav-projects:after,
 		a:hover .nav-contact:after,
-		a:hover .nav-about:after {
+		a:hover .nav-hello:after {
 			opacity: 1;
 		}
 
