@@ -1,7 +1,7 @@
+// touch detection
 if ('ontouchstart' in window) {
     document.documentElement.className += " touch"
 }
-
 
 $(document).ready(function() {
     // inject animation classes once page is loaded
@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".contacts-details").addClass("contacts-shim-appear-late");
     $(".projects-greeter").addClass("projects-greeter-appear");
 
-
+    // add class to body for respective page
     var loc = window.location.href;
 
     if (loc.indexOf('hello') !== -1) {
@@ -34,20 +34,6 @@ $(document).ready(function() {
                 $('header').removeClass('collapsed');    
             }
         })
-
-
-
-        // $(window).on('mousewheel DOMMouseScroll', function (evt) {
-        //     if(evt.originalEvent.detail > 0 || evt.originalEvent.wheelDelta < 0) {
-        //         if (document.body.scrollHeight !== $(window).height() + $('body').scrollTop())
-        //         {
-        //             $('header').addClass('collapsed');    
-        //         }
-                
-        //     } else {
-        //         // $('header').removeClass('collapsed');
-        //     }
-        // });
 
         // header hover magic
         $(".header-magic").on('mouseenter', function (e) {
