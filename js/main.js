@@ -14,14 +14,13 @@ $(document).ready(function() {
     var loc = window.location.href;
 
     if (loc.indexOf('hello') !== -1) {
-        $('body').addClass('hello');
+        $('body').addClass('page-hello');
         
     } else if (loc.indexOf('portfolio') !== -1) {
-        $('body').addClass('portfolio');
+        $('body').addClass('page-portfolio');
     } else if (loc.indexOf('contacts') !== -1) {
-        $('body').addClass('contacts');
+        $('body').addClass('page-contacts');
     }
-
 
     // nav shift on scroll on all pages besides contacts
     if($('.contacts-container').length == 0) {
@@ -35,24 +34,11 @@ $(document).ready(function() {
             }
         })
 
-        // header hover magic
-        $(".header-magic").on('mouseenter', function (e) {
-            if ($('header').hasClass('collapsed')) {
-                $('header').removeClass('collapsed');
-            }
-        }).on('mouseleave', function (e) {
-            if (!$('header').hasClass('collapsed')
-                && !$(e.relatedTarget).is('header')) {
-                $('header').addClass('collapsed');
-            }
-        });
-
          $(window).scroll(function (e) {
             if (document.body.scrollHeight == $(window).height() + $('body').scrollTop())
             {
                 $('a.back-to-portfolio').addClass('highlighted');
-                console.log($('header'))
-                $('header').removeClass('collapsed');
+
             } else {
                 $('a.back-to-portfolio').removeClass('highlighted');
             }
