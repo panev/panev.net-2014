@@ -52,8 +52,8 @@
 
 .page-hello .header-push { /* background-color shim for hello page */
 	background-color: $light-cyan;
-	animation: fade-in70 2s;
-	animation-delay: 2s;
+	animation: fade-in70 1s;
+	animation-delay: 1s;
 }
 
 .header-magic { /* header wrapper */
@@ -81,12 +81,10 @@
 	/* collapse / uncollapse logic  */
 	.collapsed {
 		transform: translateY(-75px);
-		opacity: 0.75;
 	}
 
 	.header-magic:hover header {
 		transform: translateY(0px);
-		opacity: 1;
 	}
 
 	header nav {

@@ -607,10 +607,10 @@ img {
 .page-hello .header-push {
   /* background-color shim for hello page */
   background-color: #58d3f7;
-  -webkit-animation: fade-in70 2s;
-  animation: fade-in70 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation: fade-in70 1s;
+  animation: fade-in70 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .header-magic {
@@ -645,14 +645,12 @@ header {
   -webkit-transform: translateY(-75px);
   -ms-transform: translateY(-75px);
   transform: translateY(-75px);
-  opacity: 0.75;
 }
 
 .header-magic:hover header {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
-  opacity: 1;
 }
 
 header nav {
@@ -732,18 +730,8 @@ header nav {
   position: relative;
   -webkit-animation: fade-in70 1.4s;
   animation: fade-in70 1.4s;
-}
-.about-me-pic div {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  background-image: url("../images/moi.jpg");
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-.about-me-pic .pic-gray {
-  opacity: 0.8;
-  background-position: 0px 0px;
 }
 
 .social-sprite {
@@ -1465,6 +1453,11 @@ footer p {
   text-align: right;
 }
 
+.page-hello footer,
+.page-portfolio footer {
+  margin-top: 100px;
+}
+
 /* contacts ani */
 @-webkit-keyframes contacts-collapse {
   0% {
@@ -1993,13 +1986,5 @@ footer p {
   .contacts-container .contacts-details {
     top: 0;
     margin: 20px;
-  }
-
-  header nav {
-    display: none !important;
-  }
-
-  header h1.nmi-3 {
-    margin-left: 30px;
   }
 }

@@ -5,8 +5,8 @@
 
 	<section class="hello-splash">
 
-			<h2 class="hero-h2">Hello!</h2>
-			<h2>My name is Todor &amp; I like to make things.</h2>
+		<h2 class="hero-h2">Hello!</h2>
+		<h2>My name is Todor &amp; I like to make things.</h2>
 
 	<div class="light-cyan-shim"></div>
 
@@ -38,8 +38,7 @@
 	    	</div>
 
 	    	<div class="nmi-3 about-me-pic push-2">
-	    		<div class="pic-gray"></div>
-	    		<div class="pic-full"></div>
+	    		<img src="images/moi.jpg">
 	    	</div>
 
     	</section>
@@ -70,7 +69,7 @@
 
 	    </section>
 
-	    <section class="about-skill skill-font-end">
+	    <section class="about-skill">
 
 	    	<div class="nmi-3 about-ill push-5">
 	    		<img class="skill-cog" src="images/about-ills/about-ill-frontend-cog.svg">
