@@ -1903,38 +1903,6 @@ footer p {
     opacity: 0;
   }
 }
-@-webkit-keyframes project-h1-scale {
-  0% {
-    -webkit-transform: translate(0px, 110px) scale(1.5);
-    transform: translate(0px, 110px) scale(1.5);
-  }
-
-  70% {
-    -webkit-transform: translate(0px, 0px) scale(1.5);
-    transform: translate(0px, 0px) scale(1.5);
-  }
-
-  100% {
-    -webkit-transform: translate(0px, 0px) scale(1);
-    transform: translate(0px, 0px) scale(1);
-  }
-}
-@keyframes project-h1-scale {
-  0% {
-    -webkit-transform: translate(0px, 110px) scale(1.5);
-    transform: translate(0px, 110px) scale(1.5);
-  }
-
-  70% {
-    -webkit-transform: translate(0px, 0px) scale(1.5);
-    transform: translate(0px, 0px) scale(1.5);
-  }
-
-  100% {
-    -webkit-transform: translate(0px, 0px) scale(1);
-    transform: translate(0px, 0px) scale(1);
-  }
-}
 @media (max-width: 1100px) {
   .apex-this .nmi-1,
   .apex-this .nmi-2,

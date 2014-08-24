@@ -202,17 +202,3 @@
 		opacity: 0;
 	}
 }
-
-@keyframes project-h1-scale {
-	0% {
-		transform: translate(0px, 110px) scale(1.5);
-	}
-
-	70% {
-		transform: translate(0px, 0px) scale(1.5);
-	}
-
-	100% {
-		transform: translate(0px, 0px) scale(1.0);		
-	}
-}
