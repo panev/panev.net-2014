@@ -18,7 +18,7 @@ $nav-afters:'.nav-projects:after, .nav-hello:after, .nav-contact:after';
 $contacts-contents: '.contacts-info, .contacts-details';
 
 /*other variables*/
-$bebas: 'bebas-regular' 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
+$bebas: 'bebas-regular', 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
 $pt-sans: 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
 
 body ::selection { 
@@ -69,16 +69,6 @@ body ::-moz-selection {
 	color: $main-cyan;
 	text-align: center;
 	margin: 40px 0 100px 0;
-}
-
-hr {
-	background: rgba(0, 0, 0, 0);
-	color: rgba(0, 0, 0, 0);
-	border: 1px solid rgba(0, 0, 0, 0);
-	border-top: 1px dashed rgba(255, 255, 255, 0.7);
-	width: 150%;
-	transition: 0.3s;
-	transform: translate(-18px, -25px) scale(0, 1);
 }
 
 .vr-dash {
@@ -166,7 +156,7 @@ body {
 }
 
 h2 {
-	font-family: 'bebas-regular';
+	font-family: $bebas;
 	font-weight: 400;
 	font-size: 30px;
 }
