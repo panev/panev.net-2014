@@ -646,19 +646,60 @@ header nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
-.nav-projects, .nav-hello, .nav-contact {
-  display: inline-block;
-  margin-left: 50px;
-  font-size: 24px;
-  font-family: "bebas-regular", "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
-  text-transform: uppercase;
-  padding: 0 15px;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
+header nav a span {
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+header nav a:hover span {
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+}
+header nav a::after {
+  content: '';
+  display: inline-block;
+  background-color: #58d3f7;
+  height: 84px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header nav a:hover::after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.nav-projects, .nav-hello, .nav-contact {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 24px;
+  font-family: "bebas-regular", "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  padding: 0 25px;
+}
+
+.page-hello .nav-hello,
+.page-portfolio .nav-projects,
+.page-contacts .nav-contact {
+  background-color: #197d9a;
 }
 
 .hello-splash {

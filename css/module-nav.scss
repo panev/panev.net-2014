@@ -91,15 +91,51 @@
 		height: $header-height;
 		text-align: right;
 		transition: 0.5s;
+		& a span {
+			transform: translate(0px, 0px);
+
+			transition: 0.5s;
+			display: inline-block;
+			position: relative;
+			z-index: 100;
+		}
+
+		& a:hover span {
+			transform: translate(0px, -5px);
+		}
+
+		& a::after {
+			content: '';
+			display: inline-block;
+			background-color: $light-cyan;
+			height: $header-height;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			transform: scale(1, 0);
+			transform-origin: top;
+			transition: 0.25s;
+		}
+
+		& a:hover::after {
+			transform: scale(1, 1);
+		}
 	}
 
 		#{$nav-items} {
+			position: relative;
 			display: inline-block;
-			margin-left: 50px;
+			margin-left: 30px;
 			font-size: 24px;
 			font-family: $bebas;
 			text-transform: uppercase;
-			padding: 0 15px;
-			transition: 0.35s;
-			transform: translate(0px, 0px);
+			padding: 0 25px;
+		}
+
+		.page-hello .nav-hello,
+		.page-portfolio .nav-projects,
+		.page-contacts .nav-contact {
+			background-color: $dark-cyan;
 		}
