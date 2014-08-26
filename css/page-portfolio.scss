@@ -56,7 +56,7 @@
 		transform: translate(-50%, -50%);
 		position: absolute;
 		top: 50%;
-		left: 285px;
+		left: 380px;
 		transition: 0.4s;
 	}
 
@@ -75,7 +75,7 @@
  	& h1 {
  		text-transform: uppercase;
  		color: $dark-gray;
- 		margin-left: 478px;
+ 		margin-left: 560px;
  		opacity: 0.6;
  		transform: translate(0px, 110px);
  		transition: 0.45s;
@@ -96,9 +96,9 @@
 		transition: 0.7s;
 		transform: translate(0%, 40%);
 	} 
-
+ 
 	& p {
-		width: 620px;
+		width: 540px;
 		height: 82px;
 		text-align: justify;
 		color: $dark-gray;
@@ -230,7 +230,6 @@
 		font-size: 1.2em;
 		margin-top: 20px;
 		display: inline-block;
-		transition: 0.3s;
 		text-decoration: none;
 
 		&:hover {
@@ -251,18 +250,24 @@
 			position: relative;
 			left: 0px;
 		}
-
 	}
 
-	& a.back-to-portfolio {
+	& .back-to-portfolio {
 		float: left;
 
 		&::before { 
 			content: '< ';
 		}
+
+		&.highlighted {
+			animation: blink 0.35s 2;
+			animation-delay: 0.4s;
+		}
 	}
 
-	& a.visit-project {
+
+
+	& .visit-project {
 		color: $main-cyan;
 
 		&::after {

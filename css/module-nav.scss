@@ -93,7 +93,6 @@
 		transition: 0.5s;
 		& a span {
 			transform: translate(0px, 0px);
-
 			transition: 0.5s;
 			display: inline-block;
 			position: relative;
@@ -127,7 +126,7 @@
 		#{$nav-items} {
 			position: relative;
 			display: inline-block;
-			margin-left: 30px;
+			margin-left: 20px;
 			font-size: 24px;
 			font-family: $bebas;
 			text-transform: uppercase;

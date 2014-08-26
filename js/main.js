@@ -23,7 +23,7 @@ $(document).ready(function() {
     }
 
     // nav shift on scroll on all pages besides contacts
-    if($('.contacts-container').length == 0) {
+    if($('.page-contacts').length == 0) {
         $(window).scroll(function (e) {
             if ($('body').scrollTop() > 0
                 && document.body.scrollHeight !== $(window).height() + $('body').scrollTop()) 

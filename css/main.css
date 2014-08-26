@@ -689,7 +689,7 @@ header nav a:hover::after {
 .nav-projects, .nav-hello, .nav-contact {
   position: relative;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 24px;
   font-family: "bebas-regular", "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
@@ -1256,7 +1256,7 @@ a[href="https://www.behance.net/panev"] .full-social {
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  left: 285px;
+  left: 380px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1275,7 +1275,7 @@ a[href="https://www.behance.net/panev"] .full-social {
 .project-container h1 {
   text-transform: uppercase;
   color: #505050;
-  margin-left: 478px;
+  margin-left: 560px;
   opacity: 0.6;
   -webkit-transform: translate(0px, 110px);
   -ms-transform: translate(0px, 110px);
@@ -1301,7 +1301,7 @@ a[href="https://www.behance.net/panev"] .full-social {
   transform: translate(0%, 40%);
 }
 .project-container p {
-  width: 620px;
+  width: 540px;
   height: 82px;
   text-align: justify;
   color: #505050;
@@ -1418,8 +1418,6 @@ a[href="https://www.behance.net/panev"] .full-social {
   font-size: 1.2em;
   margin-top: 20px;
   display: inline-block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   text-decoration: none;
 }
 .project-info a:hover {
@@ -1437,16 +1435,22 @@ a[href="https://www.behance.net/panev"] .full-social {
   position: relative;
   left: 0px;
 }
-.project-info a.back-to-portfolio {
+.project-info .back-to-portfolio {
   float: left;
 }
-.project-info a.back-to-portfolio::before {
+.project-info .back-to-portfolio::before {
   content: '< ';
 }
-.project-info a.visit-project {
+.project-info .back-to-portfolio.highlighted {
+  -webkit-animation: blink 0.35s 2;
+  animation: blink 0.35s 2;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.project-info .visit-project {
   color: #20c4f4;
 }
-.project-info a.visit-project::after {
+.project-info .visit-project::after {
   content: ' >';
 }
 
@@ -1929,6 +1933,32 @@ footer p {
 
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 @media (max-width: 1100px) {
