@@ -91,6 +91,7 @@
 		height: $header-height;
 		text-align: right;
 		transition: 0.5s;
+		
 		& a span {
 			transform: translate(0px, 0px);
 			transition: 0.5s;
@@ -105,36 +106,49 @@
 
 		& a::after {
 			content: '';
-			display: inline-block;
-			background-color: $light-cyan;
 			height: $header-height;
+			background-color: $light-cyan;
 			width: 100%;
 			position: absolute;
-			left: 0;
 			top: 0;
-			z-index: 1;
-			transform: scale(1, 0);
-			transform-origin: top;
-			transition: 0.25s;
+			left: 0;
+			transform-origin: middle;
+			transform: scale(0,1);
+			transition: 0.2s;
 		}
 
 		& a:hover::after {
 			transform: scale(1, 1);
+			opacity: 0.7;
 		}
 	}
-
-		#{$nav-items} {
-			position: relative;
-			display: inline-block;
-			margin-left: 20px;
-			font-size: 24px;
-			font-family: $bebas;
-			text-transform: uppercase;
-			padding: 0 25px;
-		}
 
 		.page-hello .nav-hello,
 		.page-portfolio .nav-projects,
 		.page-contacts .nav-contact {
-			background-color: $dark-cyan;
+
+			& span {
+				transform: translate(0px, 0px);
+			}
+
+			&::after {
+				background-color: $dark-cyan;
+				transform: scale(1, 1);
+				opacity: 1;
+			}
 		}
+
+		#{$nav-items} {
+			position: relative;
+			display: inline-block;
+			font-size: 24px;
+			font-family: $bebas;
+			text-transform: uppercase;
+			padding: 0 35px;
+			margin-left: -3px;
+			transition: 0.3s;
+		}
+
+
+
+

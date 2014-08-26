@@ -64,7 +64,7 @@ body ::-moz-selection {
 }
 
 .hero-h2 {
-  font-size: 60px;
+  font-size: 80px;
   color: #20c4f4;
   text-align: center;
   margin: 40px 0 100px 0;
@@ -663,43 +663,55 @@ header nav a:hover span {
 }
 header nav a::after {
   content: '';
-  display: inline-block;
-  background-color: #58d3f7;
   height: 84px;
+  background-color: #58d3f7;
   width: 100%;
   position: absolute;
-  left: 0;
   top: 0;
-  z-index: 1;
-  -webkit-transform: scale(1, 0);
-  -ms-transform: scale(1, 0);
-  transform: scale(1, 0);
-  -webkit-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  left: 0;
+  -webkit-transform-origin: middle;
+  -ms-transform-origin: middle;
+  transform-origin: middle;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 header nav a:hover::after {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
+  opacity: 0.7;
+}
+
+.page-hello .nav-hello span,
+.page-portfolio .nav-projects span,
+.page-contacts .nav-contact span {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.page-hello .nav-hello::after,
+.page-portfolio .nav-projects::after,
+.page-contacts .nav-contact::after {
+  background-color: #197d9a;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
 }
 
 .nav-projects, .nav-hello, .nav-contact {
   position: relative;
   display: inline-block;
-  margin-left: 20px;
   font-size: 24px;
   font-family: "bebas-regular", "PT Sans Narrow", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
-  padding: 0 25px;
-}
-
-.page-hello .nav-hello,
-.page-portfolio .nav-projects,
-.page-contacts .nav-contact {
-  background-color: #197d9a;
+  padding: 0 35px;
+  margin-left: -3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hello-splash {
@@ -1959,6 +1971,28 @@ footer p {
 
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes nav-loop {
+  0% {
+    -webkit-transform: scale(1, -0.1);
+    transform: scale(1, -0.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes nav-loop {
+  0% {
+    -webkit-transform: scale(1, -0.1);
+    transform: scale(1, -0.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 @media (max-width: 1100px) {

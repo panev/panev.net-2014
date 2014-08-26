@@ -7,8 +7,14 @@
 	& .hero-h2 {
 		margin: 140px 0 20px 0;
 		width: 100%;
+		font-size: 70px;
+		color: $main-cyan;
+		text-align: center;
+		margin: 40px 0 100px 0;
 		animation: fade-in70 0.9s;
 	}
+
+}
 
 	& h2 {
 		margin-bottom: 10px;

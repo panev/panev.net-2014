@@ -216,3 +216,13 @@
 		opacity: 1;
 	}
 }
+
+@keyframes nav-loop {
+	0% {
+		transform: scale(1, -0.1);
+	}
+
+	100% {
+		transform: scale(1, 1);
+	}
+}

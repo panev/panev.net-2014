@@ -45,7 +45,6 @@ $(document).ready(function() {
          }); 
     }
 
-
     // 100% height on contacts page
     if($('.contacts-container').length == 1) {  
         $("html, body").addClass("such-height");

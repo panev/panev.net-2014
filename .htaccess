@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RedirectMatch 301 /panevnet/index.php /panevnet/hello
+
+#rewrite php file urls
+RewriteBase /panevnet/
+RewriteCond %{REQUEST_URI} !^(.*)\.(.*)$
+RewriteRule ^(.+)$ $1.php [L]
