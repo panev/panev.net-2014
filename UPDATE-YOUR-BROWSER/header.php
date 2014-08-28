@@ -1,0 +1,34 @@
+    <div class="header-push"></div>
+    <div class="header-magic">
+        <header>
+
+            <div class="apex-this">
+            
+                <div class="nmi-3 logo-box">
+                    <h1>Панев</h1>
+                    <span>Hi there!</span>
+                </div>
+
+                <nav class="nmi-11">
+
+                    <a href="hello" class="nav-hello">
+                        <span>Hello</span>
+                    </a>
+
+                    <a href="portfolio" class="nav-projects">
+                        <span>Portfolio</span>
+                    </a>
+
+                    <a href="contacts" class="nav-contact">
+                        <span>Contact</span>
+                    </a>
+                    
+                </nav>
+
+                
+
+            </div>
+
+        </header>
+
+    </div>

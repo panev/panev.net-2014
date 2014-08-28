@@ -63,13 +63,6 @@ body ::-moz-selection {
   background-color: #58d3f7;
 }
 
-.hero-h2 {
-  font-size: 80px;
-  color: #20c4f4;
-  text-align: center;
-  margin: 40px 0 100px 0;
-}
-
 .vr-dash {
   height: 500px;
   width: 30px;
@@ -720,12 +713,6 @@ header nav a:hover::after {
   text-align: center;
   position: relative;
 }
-.hello-splash .hero-h2 {
-  margin: 140px 0 20px 0;
-  width: 100%;
-  -webkit-animation: fade-in70 0.9s;
-  animation: fade-in70 0.9s;
-}
 .hello-splash h2 {
   margin-bottom: 10px;
   display: inline-block;
@@ -735,11 +722,25 @@ header nav a:hover::after {
   animation: fade-in70 1.1s;
   color: #fff;
 }
+.hello-splash h2.hero-h2 {
+  margin-top: 150px;
+}
 .hello-splash a {
   margin-top: 30px;
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
+}
+
+.hero-h2 {
+  margin: 140px 0 20px 0;
+  width: 100%;
+  font-size: 70px;
+  color: #20c4f4;
+  text-align: center;
+  margin: 40px 0 100px 0;
+  -webkit-animation: fade-in70 0.9s;
+  animation: fade-in70 0.9s;
 }
 
 .about-things-container {
@@ -750,7 +751,7 @@ header nav a:hover::after {
   background-color: #fff;
   opacity: 1;
   display: inline-block;
-  padding: 80px 0;
+  padding: 65px 0;
 }
 .about-things-container h2 {
   color: #20c4f4;
