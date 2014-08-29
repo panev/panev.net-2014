@@ -1,6 +1,6 @@
 RewriteEngine On
 
-#RedirectMatch 301 /panevnet/index.php /panevnet/hello
+RedirectMatch 301 /panevnet/index.php /panevnet/hello
 
 RewriteBase /panevnet/
 RewriteCond %{REQUEST_URI} !^(.*)\.(.*)$
