@@ -17,7 +17,7 @@
 
     	<section class="about-things-container">
 
-	    	<div class="nmi-8 push-1">
+	    	<div class="nmi-8 push-2">
 	    		<h2>About me</h2> 
 	    		<p>I'm a web designer &amp; front-end developer based in Sofia, Bulgaria. I currently work for Infragistics, a software
 	    			components vendor, where I create visuals and write code for our web dev tools product &ndash; IgniteUI.</p>
@@ -45,7 +45,7 @@
 
     	<h2 class="hero-h2">Some of the things I do</h2>
 
-		<section class="about-skill">
+		<section class="about-skill push-2 nmi-10">
 
 	    	<div class="nmi-3 about-ill">
 	    		<div class="dot-1"></div>
@@ -60,7 +60,7 @@
 	    	</div>
 
 
-	    	<div class="skill-info nmi-7">
+	    	<div class="skill-info">
 	    		<h2>Web UI &amp; UX</h2>
 	    		<p>I specialize in creating user experiences and engineering user interfaces for the web and 
 	    			various types of apps. Crafting usability is a crucial part of every successful 
@@ -69,14 +69,14 @@
 
 	    </section>
 
-	    <section class="about-skill">
+	    <section class="about-skill push-2 nmi-10">
 
-	    	<div class="nmi-3 about-ill push-5">
+	    	<div class="about-ill nmi-3">
 	    		<img class="skill-cog" src="images/about-ills/about-ill-frontend-cog.svg">
 	    		<img src="images/about-ills/about-ill-frontend-vial.svg">
 	    	</div>
 
-	    	<div class="skill-info nmi-6 push-5">
+	    	<div class="skill-info">
 	    		<h2>Front-end development</h2>
 	    		<p>I also do Front-end development, I find great joy in 
 	    			giving life to the concepts and various UI/UX solutions I create,
@@ -86,16 +86,16 @@
 
 	    </section>
 
-	    <section class="about-skill">
+	    <section class="about-skill push-2 nmi-10">
 
-	    	<div class="nmi-3 about-ill">
+	    	<div class="about-ill nmi-3">
 	    		<div class="brand-dot-1"></div>
 	    		<div class="brand-dot-2"></div>
 	    		<div class="brand-dot-3"></div>
 	    		<img src="images/about-ills/about-ill-branding.svg">
 	    	</div>
 
-	    	<div class="skill-info nmi-6">
+	    	<div class="skill-info">
 	    		<h2>Branding</h2>
 	    		<p>In addition to that I quite enjoy building brands and working with people to develop 
 	    			their individual or corporate identeties. Branding is not only about creating a logo symbol, 
@@ -104,9 +104,9 @@
 
 	    </section>
 
-	    <section class="about-skill">
+	    <section class="about-skill push-2 nmi-10">
 
-	    	<div class="about-ill nmi-3 push-5">
+	    	<div class="about-ill nmi-3">
 		    		<div class="good-cross">
 			    		<div class="good-line-1"></div>
 			    		<div class="good-line-2"></div>
@@ -116,7 +116,7 @@
 	    		<img src="images/about-ills/about-ill-good-base.svg">
 	    	</div>
 
-	    	<div class="skill-info nmi-6 push-5">
+	    	<div class="skill-info">
 	    		<h2>Helping out</h2>
 	    		<p>I constantly look for ways to share knowledge and expertise </p>
 	    	</div>
