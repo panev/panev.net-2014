@@ -3,7 +3,7 @@
 <?php require 'header.php'; ?>
 
     <div class="apex-this">
-        <aside class="project-info nmi-3 clearfix">
+        <aside class="project-info nmi-3">
 
             <h2>Posters for Infragistics</h1>
             <div class="project-date">12.02.2014</div>
@@ -16,7 +16,10 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             <a href="portfolio.php#posters" class="back-to-portfolio">Back</a>
+            
         </aside>
+
+        <div class"clearfix"></div>
 
         <section class="nmi-10 push-4 inner-projects-container">
 

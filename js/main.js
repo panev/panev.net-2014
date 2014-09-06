@@ -22,8 +22,10 @@ $(document).ready(function() {
         $('body').addClass('page-contacts');
     }
 
-    // nav shift on scroll on all pages besides contacts
+    // applies to all pages execept contacts
     if($('.page-contacts').length == 0) {
+
+        // header collapse/expand logic
         $(window).scroll(function (e) {
             if ($('body').scrollTop() > 0
                 && document.body.scrollHeight !== $(window).height() + $('body').scrollTop()) 
@@ -34,6 +36,7 @@ $(document).ready(function() {
             }
         })
 
+        // add a class to back/go-to links on page scroll end
          $(window).scroll(function (e) {
             if (document.body.scrollHeight == $(window).height() + $('body').scrollTop())
             {
