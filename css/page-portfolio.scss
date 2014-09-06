@@ -72,7 +72,7 @@
 		background-position: 0% -100%;
 	}
 
- 	& h1 {
+ 	& h2 {
  		text-transform: uppercase;
  		color: $dark-gray;
  		margin-left: 560px;
@@ -142,7 +142,7 @@
 
 	& .gray-thumb, 
 	& .full-thumb {
-		transform: translate(-180px, -50%);
+		transform: translate(-240px, -50%);
 	}
 
 	& .gray-thumb,
@@ -154,7 +154,7 @@
 		opacity: 1;
 	}
 
-	& h1 {
+	& h2 {
 		opacity: 1;
  		transform: translate(0px, 0px);
 

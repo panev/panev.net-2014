@@ -12,7 +12,7 @@
 
             <div class="full-thumb"></div>
 
-            <h1>Meta Colors</h2>
+            <h2>Meta Colors</h2>
 
             <div class="tags">Branding, Front-end</div>
 
@@ -30,7 +30,7 @@
 
             <div class="full-thumb"></div>
 
-            <h1>jQuery Sofia</h2>
+            <h2>jQuery Sofia</h2>
 
             <div class="tags">Branding</div>
 
@@ -48,7 +48,7 @@
 
             <div class="full-thumb"></div>
 
-            <h1>Infragistics Posters</h2>
+            <h2>Infragistics Posters</h2>
 
             <div class="tags">Graphic design, Branding</div>
 
@@ -66,7 +66,7 @@
 
             <div class="full-thumb"></div>
 
-            <h1>Meta Colors</h2>
+            <h2>Meta Colors</h2>
 
             <div class="tags">Branding, Front-end</div>
 
@@ -84,7 +84,7 @@
 
             <div class="full-thumb"></div>
 
-            <h1>Meta Colors</h2>
+            <h2>Meta Colors</h2>
 
             <div class="tags">Branding, Front-end</div>
 

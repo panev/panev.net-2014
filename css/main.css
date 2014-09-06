@@ -723,7 +723,7 @@ header nav a:hover::after {
   color: #fff;
 }
 .hello-splash h2.hero-h2 {
-  margin-top: 150px;
+  margin-top: 170px;
 }
 .hello-splash a {
   margin-top: 30px;
@@ -847,13 +847,14 @@ a[href="https://www.behance.net/panev"] .full-social {
   width: 100%;
   padding: 80px 0 55px 0;
   display: inline-block;
-  opacity: 0.65;
-  -webkit-transition: 0.55s;
-  transition: 0.55s;
-}
-.about-skill .vr-dash {
-  height: 250px;
-  margin-top: 0;
+  opacity: 0.7;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .about-skill h2 {
   margin: 40px 0 15px 0;
@@ -861,11 +862,71 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 .about-skill .about-ill {
   height: 250px;
+  margin-right: 30px;
+  margin-left: 0;
+  opacity: 0.65;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
 }
 .about-skill .about-ill img {
   position: absolute;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.about-skill .skill-info {
+  overflow: hidden;
+}
+.about-skill .skill-info h2 {
+  -webkit-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  transform: translateY(65px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #505050;
+}
+.about-skill .skill-info p {
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(100px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+.about-skill .full-ill {
+  opacity: 0;
+}
+.about-skill .gray-ill {
+  opacity: 0.65;
 }
 .about-skill:hover {
+  opacity: 1;
+  -webkit-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  transform: translateX(-150px);
+}
+.about-skill:hover .about-ill {
+  -webkit-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  transform: translateX(-25px);
+}
+.about-skill:hover h2, .about-skill:hover p {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+.about-skill:hover h2 {
+  color: #20c4f4;
+}
+.about-skill:hover .gray-ill {
+  opacity: 0;
+}
+.about-skill:hover .full-ill {
   opacity: 1;
 }
 .about-skill:hover .skill-cog {
@@ -1284,7 +1345,7 @@ a[href="https://www.behance.net/panev"] .full-social {
   transform: translate(-50%, -50%);
   background-position: 0% -100%;
 }
-.project-container h1 {
+.project-container h2 {
   text-transform: uppercase;
   color: #505050;
   margin-left: 560px;
@@ -1357,9 +1418,9 @@ a[href="https://www.behance.net/panev"] .full-social {
   opacity: 1;
 }
 .project-container:hover .gray-thumb, .project-container:hover .full-thumb {
-  -webkit-transform: translate(-180px, -50%);
-  -ms-transform: translate(-180px, -50%);
-  transform: translate(-180px, -50%);
+  -webkit-transform: translate(-240px, -50%);
+  -ms-transform: translate(-240px, -50%);
+  transform: translate(-240px, -50%);
 }
 .project-container:hover .gray-thumb, .project-container:hover .hero-thumb {
   opacity: 0;
@@ -1367,7 +1428,7 @@ a[href="https://www.behance.net/panev"] .full-social {
 .project-container:hover .full-thumb {
   opacity: 1;
 }
-.project-container:hover h1 {
+.project-container:hover h2 {
   opacity: 1;
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);

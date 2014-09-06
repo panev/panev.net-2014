@@ -17,7 +17,7 @@
 
     	<section class="about-things-container">
 
-	    	<div class="nmi-8 push-2">
+	    	<div class="nmi-8 push-1">
 	    		<h2>About me</h2> 
 	    		<p>I'm a web designer &amp; front-end developer based in Sofia, Bulgaria. I currently work for Infragistics, a software
 	    			components vendor, where I create visuals and write code for our web dev tools product &ndash; IgniteUI.</p>
@@ -45,7 +45,7 @@
 
     	<h2 class="hero-h2">Some of the things I do</h2>
 
-		<section class="about-skill push-2 nmi-10">
+		<section class="about-skill push-4 nmi-10">
 
 	    	<div class="nmi-3 about-ill">
 	    		<div class="dot-1"></div>
@@ -56,7 +56,8 @@
 	    		<div class="dot-6"></div>
 	    		<div class="dot-7"></div>
 	    		<div class="dot-8"></div>
-	    		<img src="images/about-ills/about-ill-uiux.svg">
+	    		<img class="gray-ill" src="images/about-ills/about-ill-uiux-gray.svg">
+	    		<img class="full-ill" src="images/about-ills/about-ill-uiux.svg">
 	    	</div>
 
 
@@ -69,11 +70,13 @@
 
 	    </section>
 
-	    <section class="about-skill push-2 nmi-10">
+	    <section class="about-skill push-4 nmi-10">
 
 	    	<div class="about-ill nmi-3">
-	    		<img class="skill-cog" src="images/about-ills/about-ill-frontend-cog.svg">
-	    		<img src="images/about-ills/about-ill-frontend-vial.svg">
+	    		<img class="skill-cog gray-ill" src="images/about-ills/about-ill-frontend-cog-gray.svg">
+	    		<img class="skill-cog full-ill" src="images/about-ills/about-ill-frontend-cog.svg">
+	    		<img class="gray-ill" src="images/about-ills/about-ill-frontend-vial-gray.svg">
+	    		<img class="full-ill" src="images/about-ills/about-ill-frontend-vial.svg">
 	    	</div>
 
 	    	<div class="skill-info">
@@ -86,13 +89,14 @@
 
 	    </section>
 
-	    <section class="about-skill push-2 nmi-10">
+	    <section class="about-skill push-4 nmi-10">
 
 	    	<div class="about-ill nmi-3">
 	    		<div class="brand-dot-1"></div>
 	    		<div class="brand-dot-2"></div>
 	    		<div class="brand-dot-3"></div>
-	    		<img src="images/about-ills/about-ill-branding.svg">
+	    		<img class="gray-ill" src="images/about-ills/about-ill-branding-gray.svg">
+	    		<img class="full-ill" src="images/about-ills/about-ill-branding.svg">
 	    	</div>
 
 	    	<div class="skill-info">
@@ -104,7 +108,7 @@
 
 	    </section>
 
-	    <section class="about-skill push-2 nmi-10">
+	    <section class="about-skill push-4 nmi-10">
 
 	    	<div class="about-ill nmi-3">
 		    		<div class="good-cross">
@@ -112,8 +116,10 @@
 			    		<div class="good-line-2"></div>
 		    		</div>
 	    		<div class="good-circle"></div>
-	    		<img class="good-buttons" src="images/about-ills/about-ill-good-buttons.svg">
-	    		<img src="images/about-ills/about-ill-good-base.svg">
+	    		<img class="good-buttons gray-ill" src="images/about-ills/about-ill-good-buttons-gray.svg">
+	    		<img class="good-buttons full-ill" src="images/about-ills/about-ill-good-buttons.svg">
+	    		<img class="gray-ill" src="images/about-ills/about-ill-good-base-gray.svg">
+	    		<img class="full-ill" src="images/about-ills/about-ill-good-base.svg">
 	    	</div>
 
 	    	<div class="skill-info">
