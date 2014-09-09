@@ -2057,6 +2057,17 @@ footer p {
   }
 }
 @media (max-width: 1100px) {
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .header-push,
+  .logo-box span {
+    display: none;
+  }
+
   .apex-this .nmi-1,
   .apex-this .nmi-2,
   .apex-this .nmi-3,
@@ -2072,8 +2083,9 @@ footer p {
   .apex-this .nmi-13,
   .apex-this .nmi-14 {
     display: inline-block;
-    width: auto;
-    float: left;
+    width: 100%;
+    float: none;
+    margin: 0;
   }
 
   .apex-this .push-1,
@@ -2090,7 +2102,7 @@ footer p {
   .apex-this .push-12,
   .apex-this .push-13,
   .apex-this .push-14 {
-    left: 10px;
+    left: 0px;
   }
 
   .apex-this,
@@ -2099,13 +2111,57 @@ footer p {
     margin: 0px;
   }
 
-  .contacts-container .contacts-info {
-    width: 60%;
+  .contacts-info, .contacts-details {
+    top: 0px;
   }
 
-  .contacts-container .contacts-info,
-  .contacts-container .contacts-details {
-    top: 0;
+  .contacts-container h2 {
+    margin: 30px 20px 20px 20px;
+  }
+
+  .contacts-info h2 {
     margin: 20px;
+  }
+
+  .contacts-container p {
+    margin: 10px 20px;
+  }
+
+  .contacts-details h5 {
+    margin: 0 0 0 20px;
+  }
+
+  .logo-box {
+    text-align: center;
+    border-bottom: 1px dashed #fff;
+  }
+
+  header,
+  .header-magic {
+    height: 257px;
+    position: relative;
+    line-height: 60px;
+  }
+  header a:after,
+  .header-magic a:after {
+    height: 60px;
+  }
+
+  .collapsed {
+    -webkit-transform: translate(0px);
+    -ms-transform: translate(0px);
+    transform: translate(0px);
+  }
+
+  nav {
+    background-color: #20c4f4;
+    height: 60px;
+  }
+
+  .nav-projects, .nav-hello, .nav-contact {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
 }
