@@ -15,7 +15,7 @@
 
     <div class="container apex-this">
 
-    	<section class="about-things-container">
+    	<section class="about-things-container nmi-14">
 
 	    	<div class="nmi-8 push-1">
 	    		<h2>About me</h2> 
@@ -43,90 +43,72 @@
 
     	</section>
 
-    	<h2 class="hero-h2">Some of the things I do</h2>
+    	<div class="about-skills-container nmi-14">
 
-		<section class="about-skill push-4 nmi-10">
+	    	<h2 class="hero-h2">Some of the things I do</h2>
 
-	    	<div class="nmi-3 about-ill">
-	    		<div class="dot-1"></div>
-	    		<div class="dot-2"></div>
-	    		<div class="dot-3"></div>
-	    		<div class="dot-4"></div>
-	    		<div class="dot-5"></div>
-	    		<div class="dot-6"></div>
-	    		<div class="dot-7"></div>
-	    		<div class="dot-8"></div>
-	    		<img class="gray-ill" src="images/about-ills/about-ill-uiux-gray.svg">
-	    		<img class="full-ill" src="images/about-ills/about-ill-uiux.svg">
-	    	</div>
+			<section class="about-skill nmi-3 push-1">
+
+		    	<div class="about-ill">
+		    		<div class="dot-1"></div>
+		    		<div class="dot-2"></div>
+		    		<div class="dot-3"></div>
+		    		<div class="dot-4"></div>
+		    		<div class="dot-5"></div>
+		    		<div class="dot-6"></div>
+		    		<div class="dot-7"></div>
+		    		<div class="dot-8"></div>
+		    		<img class="gray-ill" src="images/about-ills/about-ill-uiux-gray.svg">
+		    		<img class="full-ill" src="images/about-ills/about-ill-uiux.svg">
+		    	</div>
 
 
-	    	<div class="skill-info">
-	    		<h2>Web UI &amp; UX</h2>
-	    		<p>I specialize in creating user experiences and engineering user interfaces for the web and 
-	    			various types of apps. Crafting usability is a crucial part of every successful 
-	    			product or experience. </p>
-	    	</div>
+		    	<div class="skill-info">
+		    		<h2>Web UI &amp; UX</h2>
+		    		<p>I specialize in creating user experiences and engineering user interfaces for the web and 
+		    			various types of apps.</p>
+		    	</div>
 
-	    </section>
+		    </section>
 
-	    <section class="about-skill push-4 nmi-10">
+		    <section class="about-skill nmi-3 push-2">
 
-	    	<div class="about-ill nmi-3">
-	    		<img class="skill-cog gray-ill" src="images/about-ills/about-ill-frontend-cog-gray.svg">
-	    		<img class="skill-cog full-ill" src="images/about-ills/about-ill-frontend-cog.svg">
-	    		<img class="gray-ill" src="images/about-ills/about-ill-frontend-vial-gray.svg">
-	    		<img class="full-ill" src="images/about-ills/about-ill-frontend-vial.svg">
-	    	</div>
+		    	<div class="about-ill">
+		    		<img class="skill-cog gray-ill" src="images/about-ills/about-ill-frontend-cog-gray.svg">
+		    		<img class="skill-cog full-ill" src="images/about-ills/about-ill-frontend-cog.svg">
+		    		<img class="gray-ill" src="images/about-ills/about-ill-frontend-vial-gray.svg">
+		    		<img class="full-ill" src="images/about-ills/about-ill-frontend-vial.svg">
+		    	</div>
 
-	    	<div class="skill-info">
-	    		<h2>Front-end development</h2>
-	    		<p>I also do Front-end development, I find great joy in 
-	    			giving life to the concepts and various UI/UX solutions I create,
-	    			with the latest&nbsp;&amp; greatest that web technology has to offer.
-	    		</p>
-	    	</div>
+		    	<div class="skill-info">
+		    		<h2>Front-end development</h2>
+		    		<p>I also do Front-end development, I find great joy in 
+		    			giving life to the concepts and various UI/UX solutions I create,
+		    			with the latest&nbsp;&amp; greatest that web technology has to offer.
+		    		</p>
+		    	</div>
 
-	    </section>
+		    </section>
 
-	    <section class="about-skill push-4 nmi-10">
+		    <section class="about-skill nmi-3 push-3">
 
-	    	<div class="about-ill nmi-3">
-	    		<div class="brand-dot-1"></div>
-	    		<div class="brand-dot-2"></div>
-	    		<div class="brand-dot-3"></div>
-	    		<img class="gray-ill" src="images/about-ills/about-ill-branding-gray.svg">
-	    		<img class="full-ill" src="images/about-ills/about-ill-branding.svg">
-	    	</div>
+		    	<div class="about-ill">
+		    		<div class="brand-dot-1"></div>
+		    		<div class="brand-dot-2"></div>
+		    		<div class="brand-dot-3"></div>
+		    		<img class="gray-ill" src="images/about-ills/about-ill-branding-gray.svg">
+		    		<img class="full-ill" src="images/about-ills/about-ill-branding.svg">
+		    	</div>
 
-	    	<div class="skill-info">
-	    		<h2>Branding</h2>
-	    		<p>In addition to that I quite enjoy building brands and working with people to develop 
-	    			their individual or corporate identeties. Branding is not only about creating a logo symbol, 
-	    			but establishing consistent visual communication across every bit of the user's experience.</p>
-	    	</div>
+		    	<div class="skill-info">
+		    		<h2>Branding</h2>
+		    		<p>In addition to that I quite enjoy building brands and working with people to develop 
+		    			their individual or corporate identeties, not only creating a logo symbol, 
+		    			but establishing consistent visual communication across every bit of the user's experience.</p>
+		    	</div>
 
-	    </section>
+		    </section>
 
-	    <section class="about-skill push-4 nmi-10">
-
-	    	<div class="about-ill nmi-3">
-		    		<div class="good-cross">
-			    		<div class="good-line-1"></div>
-			    		<div class="good-line-2"></div>
-		    		</div>
-	    		<div class="good-circle"></div>
-	    		<img class="good-buttons gray-ill" src="images/about-ills/about-ill-good-buttons-gray.svg">
-	    		<img class="good-buttons full-ill" src="images/about-ills/about-ill-good-buttons.svg">
-	    		<img class="gray-ill" src="images/about-ills/about-ill-good-base-gray.svg">
-	    		<img class="full-ill" src="images/about-ills/about-ill-good-base.svg">
-	    	</div>
-
-	    	<div class="skill-info">
-	    		<h2>Helping out</h2>
-	    		<p>I constantly look for ways to share knowledge and expertise </p>
-	    	</div>
-
-	    </section>
+	</div>
 
 	<?php require 'footer.php'; ?>

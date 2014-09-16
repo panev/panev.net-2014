@@ -737,7 +737,7 @@ header nav a:hover::after {
   width: 100%;
   color: #20c4f4;
   text-align: center;
-  margin: 40px 0 100px 0;
+  margin: 40px 0 60px 0;
   -webkit-animation: fade-in70 0.9s;
   animation: fade-in70 0.9s;
 }
@@ -844,25 +844,16 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 
 .about-skill {
-  width: 100%;
-  padding: 80px 0 55px 0;
+  padding: 60px 0 55px 0;
+  margin: 0 20px;
   display: inline-block;
   opacity: 0.7;
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-.about-skill h2 {
-  margin: 40px 0 15px 0;
-  color: #20c4f4;
+  vertical-align: top;
 }
 .about-skill .about-ill {
   height: 250px;
-  margin-right: 30px;
   margin-left: 0;
   opacity: 0.65;
   -webkit-transition: 0.5s;
@@ -878,23 +869,24 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 .about-skill .skill-info {
   overflow: hidden;
+  display: inline-block;
 }
 .about-skill .skill-info h2 {
-  -webkit-transform: translateY(65px);
-  -ms-transform: translateY(65px);
-  transform: translateY(65px);
+  -webkit-transform: translateY(25px);
+  -ms-transform: translateY(25px);
+  transform: translateY(25px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #505050;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .about-skill .skill-info p {
-  -webkit-transform: translateX(100px);
-  -ms-transform: translateX(100px);
-  transform: translateX(100px);
+  -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
   opacity: 0;
 }
 .about-skill .full-ill {
@@ -905,14 +897,11 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 .about-skill:hover {
   opacity: 1;
-  -webkit-transform: translateX(-150px);
-  -ms-transform: translateX(-150px);
-  transform: translateX(-150px);
 }
 .about-skill:hover .about-ill {
-  -webkit-transform: translateX(-25px);
-  -ms-transform: translateX(-25px);
-  transform: translateX(-25px);
+  -webkit-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  transform: translateY(-25px);
 }
 .about-skill:hover h2, .about-skill:hover p {
   -webkit-transform: translateY(0px);

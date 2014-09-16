@@ -30,7 +30,7 @@
 	width: 100%;
 	color: $main-cyan;
 	text-align: center;
-	margin: 40px 0 100px 0;
+	margin: 40px 0 60px 0;
 	animation: fade-in70 0.9s;
 }
 
@@ -142,24 +142,20 @@ a[href="https://www.behance.net/panev"] {
 	}
 }
 
+.about-skills-container {
+
+}
+
 .about-skill {
-	width: 100%;
-	padding: 80px 0 55px 0;
+	padding: 60px 0 55px 0;
+	margin: 0 20px;
 	display: inline-block;
 	opacity: 0.7;
-	transform: translateX(0px);
 	transition: 0.5s;
-	transition-delay: 0.1s;
-
-
-	& h2 {
-		margin: 40px 0 15px 0;
-		color: $main-cyan;
-	}
+	vertical-align: top;
 
 	& .about-ill {
 		height: 250px;
-		margin-right: 30px;
 		margin-left: 0;
 		opacity: 0.65;
 		transition: 0.5s;
@@ -173,17 +169,19 @@ a[href="https://www.behance.net/panev"] {
 
 	& .skill-info {
 		overflow: hidden;
+		display: inline-block;
 
 		& h2 {
-			transform: translateY(65px);
+			transform: translateY(25px);
 			transition: 0.3s;
 			color: $dark-gray;
+			text-align: center;
+			margin-bottom: 20px;
 		}
 
 		& p {
-			transform: translateX(100px);
+			transform: translateY(100px);
 			transition: 0.6s;
-			transition-delay: 0.2s;
 			opacity: 0;
 		}
 	}
@@ -198,10 +196,10 @@ a[href="https://www.behance.net/panev"] {
 
 	&:hover {
 		opacity: 1;
-		transform: translateX(-150px);
+
 
 		& .about-ill {
-			transform: translateX(-25px);
+			transform: translateY(-25px);
 		}
 
 		& h2,
@@ -213,7 +211,6 @@ a[href="https://www.behance.net/panev"] {
 		& h2 {
 			color: $main-cyan;
 		}
-
 
 		& .gray-ill {
 			opacity: 0;
