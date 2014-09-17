@@ -26,11 +26,10 @@
 }
 
 .hero-h2 {
-	margin: 140px 0 20px 0;
 	width: 100%;
 	color: $main-cyan;
 	text-align: center;
-	margin: 40px 0 60px 0;
+	margin: 120px 0 60px 0;
 	animation: fade-in70 0.9s;
 }
 
@@ -142,10 +141,6 @@ a[href="https://www.behance.net/panev"] {
 	}
 }
 
-.about-skills-container {
-
-}
-
 .about-skill {
 	padding: 60px 0 55px 0;
 	margin: 0 20px;
@@ -168,12 +163,11 @@ a[href="https://www.behance.net/panev"] {
 	}
 
 	& .skill-info {
-		overflow: hidden;
 		display: inline-block;
 
 		& h2 {
-			transform: translateY(25px);
-			transition: 0.3s;
+			transform: translateY(0px);
+			transition: 0.4s;
 			color: $dark-gray;
 			text-align: center;
 			margin-bottom: 20px;
@@ -181,7 +175,7 @@ a[href="https://www.behance.net/panev"] {
 
 		& p {
 			transform: translateY(100px);
-			transition: 0.6s;
+			transition: 0.3s;
 			opacity: 0;
 		}
 	}
@@ -202,13 +196,14 @@ a[href="https://www.behance.net/panev"] {
 			transform: translateY(-25px);
 		}
 
-		& h2,
-		& p {
+		p {
 			transform: translateY(0px);
 			opacity: 1;
 		}
 
 		& h2 {
+			transform: translateY(-15px);
+			opacity: 1;
 			color: $main-cyan;
 		}
 
@@ -477,4 +472,10 @@ a[href="https://www.behance.net/panev"] {
 	left: 179px;
 	width: 18px;
 	height: 18px;
+}
+
+.about-help-container {
+	& h2 {
+		margin-top: 50px;
+	}
 }

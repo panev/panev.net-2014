@@ -15,7 +15,7 @@
 
     <div class="container apex-this">
 
-    	<section class="about-things-container nmi-14">
+    	<div class="about-things-container nmi-14">
 
 	    	<div class="nmi-8 push-1">
 	    		<h2>About me</h2> 
@@ -41,11 +41,12 @@
 	    		<img src="images/moi.jpg">
 	    	</div>
 
-    	</section>
+    	</div>
+
 
     	<div class="about-skills-container nmi-14">
 
-	    	<h2 class="hero-h2">Some of the things I do</h2>
+	    	<h2 class="hero-h2">Some of the things I do:</h2>
 
 			<section class="about-skill nmi-3 push-1">
 
@@ -61,7 +62,6 @@
 		    		<img class="gray-ill" src="images/about-ills/about-ill-uiux-gray.svg">
 		    		<img class="full-ill" src="images/about-ills/about-ill-uiux.svg">
 		    	</div>
-
 
 		    	<div class="skill-info">
 		    		<h2>Web UI &amp; UX</h2>
@@ -102,13 +102,18 @@
 
 		    	<div class="skill-info">
 		    		<h2>Branding</h2>
-		    		<p>In addition to that I quite enjoy building brands and working with people to develop 
-		    			their individual or corporate identeties, not only creating a logo symbol, 
-		    			but establishing consistent visual communication across every bit of the user's experience.</p>
+		    		<p>In addition to that I build brands and work with people to develop their individual or corporate identeties&mdash;not only creating a logo symbol&mdash;but establishing consistent visual communication across every bit of the user experience.</p>
 		    	</div>
 
 		    </section>
 
-	</div>
+		</div>
+
+		<div class="about-help-container nmi-14">
+
+	    	<h2 class="hero-h2">Helping out:</h2>
+	    	<p class="nmi-10 push-2">Occasionally, I do pro-bono consulting &amp; volunteer work for causes I care about. </p>
+
+	    </div>
 
 	<?php require 'footer.php'; ?>

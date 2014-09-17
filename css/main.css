@@ -733,11 +733,10 @@ header nav a:hover::after {
 }
 
 .hero-h2 {
-  margin: 140px 0 20px 0;
   width: 100%;
   color: #20c4f4;
   text-align: center;
-  margin: 40px 0 60px 0;
+  margin: 120px 0 60px 0;
   -webkit-animation: fade-in70 0.9s;
   animation: fade-in70 0.9s;
 }
@@ -868,15 +867,14 @@ a[href="https://www.behance.net/panev"] .full-social {
   transition: 0.35s;
 }
 .about-skill .skill-info {
-  overflow: hidden;
   display: inline-block;
 }
 .about-skill .skill-info h2 {
-  -webkit-transform: translateY(25px);
-  -ms-transform: translateY(25px);
-  transform: translateY(25px);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   color: #505050;
   text-align: center;
   margin-bottom: 20px;
@@ -885,8 +883,8 @@ a[href="https://www.behance.net/panev"] .full-social {
   -webkit-transform: translateY(100px);
   -ms-transform: translateY(100px);
   transform: translateY(100px);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   opacity: 0;
 }
 .about-skill .full-ill {
@@ -903,13 +901,17 @@ a[href="https://www.behance.net/panev"] .full-social {
   -ms-transform: translateY(-25px);
   transform: translateY(-25px);
 }
-.about-skill:hover h2, .about-skill:hover p {
+.about-skill:hover p {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
   opacity: 1;
 }
 .about-skill:hover h2 {
+  -webkit-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  transform: translateY(-15px);
+  opacity: 1;
   color: #20c4f4;
 }
 .about-skill:hover .gray-ill {
@@ -1219,6 +1221,10 @@ a[href="https://www.behance.net/panev"] .full-social {
   height: 18px;
 }
 
+.about-help-container h2 {
+  margin-top: 50px;
+}
+
 .contacts-container {
   height: 100%;
 }
@@ -1289,19 +1295,13 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 .project-container::after, .project-container::before {
   height: 1px;
-  width: 34%;
+  width: 100%;
   content: '';
   display: block;
   position: absolute;
   -webkit-transition: 0.35s;
   transition: 0.35s;
   opacity: 0;
-  -webkit-transform: scaleX(3);
-  -ms-transform: scaleX(3);
-  transform: scaleX(3);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
 }
 .project-container::before {
   top: 0px;
