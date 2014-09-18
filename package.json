@@ -1,11 +1,27 @@
 {
   "name": "panev.net",
+  "description": "A personal portfolio page.",
+  "homepage": "https://github.com/panev/panev.net",
   "version": "0.1.0",
+  "author": {
+    "name": "Todor Panev",
+    "url": "http://panev.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/panev/panev.net.git"
+  },
+  "bugs": {
+    "url": "https://github.com/panev/panev.net/issues"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-php": "~0.4.0"
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-autoprefixer": "~1.0.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.8.0"
   }
 }

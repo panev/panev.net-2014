@@ -6,6 +6,6 @@
 
 	</body>
 
-	<?php require 'bottom-scripts.php'; ?>
+	<?php require 'bottom-scripts.php'; ?>  
 
 </html>
