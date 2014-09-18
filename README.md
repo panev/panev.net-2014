@@ -1,11 +1,24 @@
-panev.net
-=========
-
-A work-in-progress personal portfolio website.
+# panev.net portfolio page
 
 
-Currently a good portion of the site is complete, however there are still areas that are quite unfinished and unpolished—namely proper responsiveness, touch screen optimization, header behaviour and all around visuals—also most of the portfolio projects aren't added yet.
+A work-in-progress personal portfolio website. Uses a lot of custom css animations and imagery, not ideal for templating.
+
+Currently a good portion of the site is complete, however there are still areas that are being worked on—namely proper responsiveness and touch screen optimization—also most of the portfolio projects aren't added yet.
 
 Feel free to clone and poke around, though. :-)
 
-Oh, and I use php for modularizing my markup. Fairly limited usage of php_require for different html bits that I reuse throughout the site ( head, navigation, footer, etc). You're going to need something like XAMPP to run apache and serve the php.
+### php
+
+Currently I use php_require to modularize html markup, so you're going to need something like XAMPP/MAMPP or Apache to get going (sorry about that). A proper template engine will be used in the (hopefully near) future.
+
+## Installation
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+grunt watch
+```
