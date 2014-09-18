@@ -107,6 +107,34 @@ body ::-moz-selection {
   opacity: 1;
 }
 
+.go-to-action {
+  font-size: 32px;
+  color: #58d3f7;
+  border-bottom: 1px dashed rgba(88, 211, 247, 0);
+  text-decoration: none;
+  display: inline-block;
+}
+.go-to-action span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  border-bottom: none;
+}
+.go-to-action:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed #58d3f7;
+  color: #20c4f4;
+}
+.go-to-action:hover span {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
 @font-face {
   font-family: 'bebas-regular';
   src: url("../fonts/BebasNeue-webfontREG.woff") format("woff");
@@ -749,7 +777,7 @@ header nav a:hover::after {
   background-color: #fff;
   opacity: 1;
   display: inline-block;
-  padding: 65px 0;
+  padding: 65px 0 45px 0;
 }
 .about-things-container h2 {
   color: #20c4f4;
@@ -762,6 +790,57 @@ header nav a:hover::after {
   text-align: justify;
   -webkit-animation: fade-in70 1.4s;
   animation: fade-in70 1.4s;
+}
+
+.about-help-container {
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+.about-help-container p {
+  opacity: 0.85;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.about-help-container p span {
+  color: #20c4f4;
+}
+.about-help-container::after, .about-help-container::before {
+  height: 1px;
+  width: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  opacity: 0;
+}
+.about-help-container::before {
+  top: 0px;
+  border-top: 1px dashed #c2c2c2;
+}
+.about-help-container::after {
+  bottom: 0px;
+  border-bottom: 1px dashed #c2c2c2;
+}
+.about-help-container:hover p, .about-help-container:hover::after, .about-help-container:hover::before {
+  opacity: 1;
+}
+.about-help-container:hover p {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.about-help-container h2 {
+  margin: 60px 0px 60px 0px;
+}
+
+.about-go-container {
+  text-align: center;
+  margin: 160px 10px 45px 10px;
 }
 
 .about-me-pic {
@@ -843,7 +922,7 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 
 .about-skill {
-  padding: 60px 0 55px 0;
+  padding-bottom: 45px;
   margin: 0 20px;
   display: inline-block;
   opacity: 0.7;
@@ -880,12 +959,12 @@ a[href="https://www.behance.net/panev"] .full-social {
   margin-bottom: 20px;
 }
 .about-skill .skill-info p {
-  -webkit-transform: translateY(100px);
-  -ms-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  opacity: 0;
+  opacity: 0.85;
 }
 .about-skill .full-ill {
   opacity: 0;
@@ -973,6 +1052,7 @@ a[href="https://www.behance.net/panev"] .full-social {
   animation-delay: 1s;
 }
 .about-skill:hover .brand-dot-1 {
+  background-color: #20c4f4;
   -webkit-animation: brand-dot-scale 2.1s infinite;
   animation: brand-dot-scale 2.1s infinite;
   -webkit-animation-delay: 0.4s;
@@ -980,11 +1060,13 @@ a[href="https://www.behance.net/panev"] .full-social {
   opacity: 1;
 }
 .about-skill:hover .brand-dot-2 {
+  background-color: #58d3f7;
   -webkit-animation: brand-dot-scale 1.5s infinite;
   animation: brand-dot-scale 1.5s infinite;
   opacity: 0.7;
 }
 .about-skill:hover .brand-dot-3 {
+  border-color: #58d3f7;
   -webkit-animation: brand-dot-rotate 2.5s infinite linear;
   animation: brand-dot-rotate 2.5s infinite linear;
   -webkit-transform-origin: center;
@@ -1110,7 +1192,7 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 
 .brand-dot-1 {
-  background-color: #20c4f4;
+  background-color: #BEBEBE;
   width: 64px;
   height: 64px;
   border: 3px solid #fff;
@@ -1122,7 +1204,7 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 
 .brand-dot-2 {
-  background-color: #58d3f7;
+  background-color: #CCCCCC;
   width: 84px;
   height: 84px;
   z-index: 90;
@@ -1133,7 +1215,7 @@ a[href="https://www.behance.net/panev"] .full-social {
 }
 
 .brand-dot-3 {
-  border: 2px dashed #58d3f7;
+  border: 2px dashed #CCCCCC;
   width: 88px;
   height: 88px;
   z-index: 80;
@@ -1219,10 +1301,6 @@ a[href="https://www.behance.net/panev"] .full-social {
   left: 179px;
   width: 18px;
   height: 18px;
-}
-
-.about-help-container h2 {
-  margin-top: 50px;
 }
 
 .contacts-container {
@@ -1347,7 +1425,7 @@ a[href="https://www.behance.net/panev"] .full-social {
   font-size: 30px;
   font-weight: 400;
 }
-.project-container .tags, .project-container p, .project-container .view-project {
+.project-container .tags, .project-container p, .project-container .go-to-action {
   position: absolute;
   right: 0;
   opacity: 0;
@@ -1374,33 +1452,11 @@ a[href="https://www.behance.net/panev"] .full-social {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.project-container .view-project {
-  font-size: 32px;
-  color: #58d3f7;
+.project-container .go-to-action {
   top: 220px;
-  border-bottom: 1px dashed rgba(88, 211, 247, 0);
   -webkit-transform: translate(0%, 100%);
   -ms-transform: translate(0%, 100%);
   transform: translate(0%, 100%);
-  text-decoration: none;
-}
-.project-container .view-project span {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: relative;
-  display: inline-block;
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
-  border-bottom: none;
-}
-.project-container .view-project:hover {
-  border-bottom: 1px dashed #58d3f7;
-}
-.project-container .view-project:hover span {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
 }
 
 .project-container:hover::before, .project-container:hover::after {
@@ -1423,13 +1479,13 @@ a[href="https://www.behance.net/panev"] .full-social {
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
 }
-.project-container:hover .tags, .project-container:hover p, .project-container:hover .view-project {
+.project-container:hover .tags, .project-container:hover p, .project-container:hover .go-to-action {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
 }
-.project-container:hover .view-project {
+.project-container:hover .go-to-action {
   -webkit-animation: view-project-appear 0.6s;
   animation: view-project-appear 0.6s;
 }
@@ -1538,18 +1594,20 @@ footer {
   height: 30px;
   float: right;
   bottom: 30px;
+  text-align: right;
 }
 footer a, footer a:hover {
   text-decoration: underline;
 }
 footer p {
   font-size: 16px;
-  text-align: right;
+  display: inline-block;
 }
 
 .page-hello footer,
 .page-portfolio footer {
-  margin-top: 100px;
+  margin-top: 200px;
+  text-align: center;
 }
 
 /* contacts ani */

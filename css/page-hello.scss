@@ -39,7 +39,7 @@
 	background-color: #fff;
 	opacity: 1;
 	display: inline-block;
-	padding: 65px 0; 
+	padding: 65px 0 45px 0; 
 	
 	& h2 {
 		color: $main-cyan;
@@ -52,6 +52,65 @@
 		text-align: justify;
 		animation: fade-in70 1.4s;
 	}
+}
+
+.about-help-container {
+
+	position: relative;
+	margin-top: 100px;
+	padding-bottom: 80px;
+
+	& p {
+		opacity: 0.85;
+		transition: 0.35s;
+		transform: translateY(0px);
+
+		& span {
+			color: $main-cyan;
+		}
+	}
+
+	&::after,
+	&::before {
+		height: 1px;
+		width: 100%;
+		content: '';
+		display: block;
+		position: absolute;
+		transition: 0.35s;
+		opacity: 0;
+	}
+
+	&::before {
+		top: 0px;
+		border-top: 1px dashed $light-gray;
+	}
+
+	&::after {
+		bottom: 0px;
+		border-bottom: 1px dashed $light-gray;
+	}
+
+	&:hover {
+		& p,
+		&::after,
+		&::before {
+			opacity: 1;
+		}
+
+		& p {
+			transform: translateY(-10px);
+		}
+	}
+
+	& h2 {
+		margin: 60px 0px 60px 0px;
+	}
+}
+
+.about-go-container {
+	text-align: center;
+	margin: 160px 10px 45px 10px;
 }
 
 .about-me-pic {
@@ -142,7 +201,7 @@ a[href="https://www.behance.net/panev"] {
 }
 
 .about-skill {
-	padding: 60px 0 55px 0;
+	padding-bottom: 45px;
 	margin: 0 20px;
 	display: inline-block;
 	opacity: 0.7;
@@ -174,9 +233,9 @@ a[href="https://www.behance.net/panev"] {
 		}
 
 		& p {
-			transform: translateY(100px);
+			transform: translateY(10px);
 			transition: 0.3s;
-			opacity: 0;
+			opacity: 0.85;
 		}
 	}
 
@@ -261,17 +320,20 @@ a[href="https://www.behance.net/panev"] {
 	}
 
 	&:hover .brand-dot-1 {
+		background-color: $main-cyan;
 		animation: brand-dot-scale 2.1s infinite;
 		animation-delay: 0.4s;
 		opacity: 1;
 	}
 
 	&:hover .brand-dot-2 {
+		background-color: $light-cyan;
 		animation: brand-dot-scale 1.5s infinite;
 		opacity: 0.7
 	}
 
 	&:hover .brand-dot-3 {
+		border-color: $light-cyan;
 		animation: brand-dot-rotate 2.5s infinite linear;
 		transform-origin: center;
 		opacity: 0.7;
@@ -372,7 +434,7 @@ a[href="https://www.behance.net/panev"] {
 }
 
 .brand-dot-1 {
-	background-color: $main-cyan;
+	background-color: #BEBEBE;
 	width: 64px;
 	height: 64px;
 	border: 3px solid #fff;
@@ -382,7 +444,7 @@ a[href="https://www.behance.net/panev"] {
 }
 
 .brand-dot-2 {
-	background-color: $light-cyan;
+	background-color: #CCCCCC;
 	width: 84px;
 	height: 84px;
 	z-index: 90;
@@ -391,7 +453,7 @@ a[href="https://www.behance.net/panev"] {
 }
 
 .brand-dot-3 {
-	border: 2px dashed $light-cyan;
+	border: 2px dashed #CCCCCC;
 	width: 88px;
 	height: 88px;
 	z-index: 80;
@@ -472,10 +534,4 @@ a[href="https://www.behance.net/panev"] {
 	left: 179px;
 	width: 18px;
 	height: 18px;
-}
-
-.about-help-container {
-	& h2 {
-		margin-top: 50px;
-	}
 }

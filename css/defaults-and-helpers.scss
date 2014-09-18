@@ -101,6 +101,32 @@ body ::-moz-selection {
 	opacity: 1;
 }
 
+.go-to-action {
+	font-size: 32px;
+	color: $light-cyan;
+	border-bottom: 1px dashed rgba(88,211,247,0);
+	text-decoration: none;
+	display: inline-block;
+
+	& span {
+		transition: 0.3s;
+		position: relative;
+		display: inline-block;
+		transform: translateX(10px);
+		border-bottom: none;
+		}
+
+	&:hover {
+		text-decoration: none;
+		border-bottom: 1px dashed rgba(88,211,247,1);
+		color: $main-cyan;
+	}
+
+		&:hover span {
+			transform: translateX(20px);
+		}
+}
+
 @font-face {
     font-family: 'bebas-regular';
     src: url('../fonts/BebasNeue-webfontREG.woff') format('woff');

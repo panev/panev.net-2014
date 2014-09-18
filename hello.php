@@ -18,7 +18,7 @@
     	<div class="about-things-container nmi-14">
 
 	    	<div class="nmi-8 push-1">
-	    		<h2>About me</h2> 
+	    		<h2>A bit about me:</h2> 
 	    		<p>I'm a web designer &amp; front-end developer based in Sofia, Bulgaria. I currently work for Infragistics, a software
 	    			components vendor, where I create visuals and write code for our web dev tools product &ndash; IgniteUI.</p>
 	    		<div class="social-sprite">
@@ -81,10 +81,11 @@
 		    	</div>
 
 		    	<div class="skill-info">
-		    		<h2>Front-end development</h2>
-		    		<p>I also do Front-end development, I find great joy in 
+		    		<h2 style="white-space: nowrap;">Front-end development</h2>
+					<!-- Call the CSS police -->
+		    		 <p>I also do Front-end development, I find great joy in 
 		    			giving life to the concepts and various UI/UX solutions I create,
-		    			with the latest&nbsp;&amp; greatest that web technology has to offer.
+		    			tweaking the latest&nbsp;&amp; greatest web technology has to offer.
 		    		</p>
 		    	</div>
 
@@ -112,8 +113,15 @@
 		<div class="about-help-container nmi-14">
 
 	    	<h2 class="hero-h2">Helping out:</h2>
-	    	<p class="nmi-10 push-2">Occasionally, I do pro-bono consulting &amp; volunteer work for causes I care about. </p>
+	    	<p class="nmi-10 push-2">Occasionally, I do pro&ndash;bono consulting &amp; volunteer work for non&ndash;profit organizations and causes I care about. If you have a project that aims to better things for humanity, save the environment, explore space or fight fires&mdash;and you're in need of advice or assistance&mdash;don't hesitate to contact me.
+	    	<br><br>For everyone else, I offer end&ndash;to&ndash;end consulting services on an hourly basis. <span>;-]</span></p>
 
 	    </div>
+
+		<div class="about-go-container nmi-14">
+
+	   		<a class="go-to-action" href="portfolio">View my work<span> ></span></a>
+
+		</div>
 
 	<?php require 'footer.php'; ?>

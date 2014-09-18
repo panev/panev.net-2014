@@ -4,7 +4,7 @@
 
     <div class="apex-this">
 
-        <h2 class="portfolio-greeter">~ Selected projects I've completed ~</h2>
+        <h2 class="portfolio-greeter">Selected projects I've completed:</h2>
 
         <div class="project-container project-meta nmi-14">
 
@@ -20,7 +20,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project<span> ></span></a>
+            <a class="go-to-action" href="#">View Project<span> ></span></a>
 
         </div>
 
@@ -38,7 +38,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project<span> ></span></a>
+            <a class="go-to-action" href="#">View Project<span> ></span></a>
 
         </div>
 
@@ -56,7 +56,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="project-infragistics-posters.php">View Project<span> ></span></a>
+            <a class="go-to-action" href="project-infragistics-posters.php">View Project<span> ></span></a>
 
         </div>
 
@@ -74,7 +74,7 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project<span> ></span></a>
+            <a class="go-to-action" href="#">View Project<span> ></span></a>
 
         </div>
 
@@ -92,7 +92,13 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation.</p>
 
-            <a class="view-project" href="#">View Project<span> ></span></a>
+            <a class="go-to-action" href="#">View Project<span> ></span></a>
+
+        </div>
+
+        <div class="about-go-container nmi-14">
+
+            <a class="go-to-action" href="contacts">Go to Contacts<span> ></span></a>
 
         </div>
         
