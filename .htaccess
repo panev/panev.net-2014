@@ -1,10 +1,10 @@
 RewriteEngine On
 
-RedirectMatch 301 /panevnet/index.php /panevnet/hello
+RedirectMatch 301 /panevnet/index.html /panevnet/hello
 
 RewriteBase /panevnet/
 RewriteCond %{REQUEST_URI} !^(.*)\.(.*)$
-RewriteRule ^(.+)$ $1.php [L]
+RewriteRule ^(.+)$ $1.html [L]
 
 RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
 RewriteRule hello ie.html [R=303,L]
