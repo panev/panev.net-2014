@@ -90,6 +90,14 @@ var corsMiddleware = function(req, res, next) {
           livereload: true,
         },
       },
+    },
+
+    open: {
+      index: {
+        path: './hello.html',
+        app: 'chrome'
+      }
+        
     }
 
   });
@@ -100,6 +108,7 @@ var corsMiddleware = function(req, res, next) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-open');
 
   // Here's a grunt server task, just in case. You do need to set it up, though.
   // grunt.loadNpmTasks('grunt-contrib-connect');
@@ -107,5 +116,6 @@ var corsMiddleware = function(req, res, next) {
 
   // Default tasks
   grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'watch', 'htmlbuild']);
+  grunt.registerTask('jedi', ['open', 'watch']);
 
 };

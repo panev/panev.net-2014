@@ -1,24 +1,33 @@
 # panev.net portfolio page
 
 
-A work-in-progress personal portfolio website. Uses a lot of custom css animations and imagery, not ideal for templating.
+A work-in-progress personal portfolio website. Uses a lot of custom css animations and imagery—usefull for inspiration, not ideal for templating.
 
 Currently a good portion of the site is complete, however there are still areas that are being worked on—namely proper responsiveness and touch screen optimization—also most of the portfolio projects aren't added yet.
 
 Feel free to clone and poke around, though. :-)
 
-### php
 
-Currently I use php_require to modularize html markup, so you're going to need something like XAMPP/MAMPP or Apache to get going (sorry about that). A proper template engine will be used in the (hopefully near) future.
+## Getting started
 
-## Installation
-
-```sh
+```
 npm install
 ```
 
+
 ## Usage
 
-```sh
-grunt watch
 ```
+grunt jedi
+```
+This just runs the ``` open ``` and ``` watch ``` grunt tasks.
+
+
+## Workflow
+
+I use a nifty task called html-build for putting together bits of html, so if you want to make changes to the html, you have to modify the files inside the html-parts folder—those compile into the actual html pages in the main folder.
+
+Compiling css is similar, modify scss files and grunt takes care of the rest.
+
+
+Feedback and Issue submits are more than welcome.
