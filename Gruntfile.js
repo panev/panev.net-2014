@@ -83,13 +83,31 @@ var corsMiddleware = function(req, res, next) {
     },
 
     watch: { 
-      all: {
-        files: ['./*.scss', './*.js', './html-parts/*/*.html'],
-        tasks: ['sass', 'autoprefixer', 'htmlbuild'],
+
+      css: {
+        files: ['css/*.scss'],
+        tasks: ['sass', 'autoprefixer'],
         options: {
           livereload: true,
         },
       },
+
+      js: {
+        files: ['js/*.js'],
+        // tasks: ['htmlbuild'],
+        options: {
+          livereload: true,
+        },
+      },
+
+      html: {
+        files: ['html-parts/*/*.html'],
+        tasks: ['htmlbuild'],
+        options: {
+          livereload: true,
+        },
+      },
+
     },
 
     open: {
@@ -97,7 +115,6 @@ var corsMiddleware = function(req, res, next) {
         path: './hello.html',
         app: 'chrome'
       }
-        
     }
 
   });
