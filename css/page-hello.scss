@@ -63,7 +63,6 @@
 	& p {
 		opacity: 0.85;
 		transition: 0.35s;
-		transform: translateY(0px);
 
 		& span {
 			color: $main-cyan;
@@ -96,10 +95,6 @@
 		&::after,
 		&::before {
 			opacity: 1;
-		}
-
-		& p {
-			transform: translateY(-10px);
 		}
 	}
 
