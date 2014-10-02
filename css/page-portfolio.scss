@@ -153,14 +153,14 @@
 
 
 /* project thumbs individual sprite selectors */
-.project-meta {
+#project-meta-colours {
 	& .gray-thumb, .full-thumb {
 		width: 260px;
 		background-image: url('../images/projects/metacolors/meta-double-thumb.png');
 	}
 }
 
-.project-jquerysofia {
+#project-jquerysofia {
 	& .gray-thumb, .full-thumb {
 		width: 260px;
 		height: 180px;
@@ -168,11 +168,25 @@
 	}
 }
 
-.project-igposters {
+#project-igposters {
 	& .gray-thumb, .full-thumb {
 		width: 260px;
 		height: 180px;
 		background-image: url('../images/projects/igposters/igposters-double-thumb.png');
+	}
+}
+
+#project-gigs {
+	& .gray-thumb, .full-thumb {
+		width: 260px;
+		background-image: url('../images/projects/gigs/gigs-double-thumb.png');
+	}
+}
+
+#project-omniamp {
+	& .gray-thumb, .full-thumb {
+		width: 260px;
+		background-image: url('../images/projects/omniamp/omniamp-double-thumb.png');
 	}
 }
 
@@ -181,7 +195,7 @@
 
 .project-info {
 	margin-top: 60px;
-	text-align: right;
+	text-align: center;
 	position: fixed;
 
 	& h2 {
@@ -196,7 +210,7 @@
 		font-size: 0.9em;
 		margin-bottom: 25px;
 		&::before {
-			content: 'Compleated on: ';
+			content: 'Compleated: ';
 			text-transform: uppercase;
 		}
 	}
@@ -233,7 +247,8 @@
 	}
 
 	& .back-to-portfolio {
-		float: left;
+
+		margin-right: 5px;
 
 		&::before { 
 			content: '< ';

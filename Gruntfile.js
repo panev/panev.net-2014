@@ -56,7 +56,10 @@ var corsMiddleware = function(req, res, next) {
               './html-parts/pages/portfolio.html',
               './html-parts/pages/contacts.html',
 
+              './html-parts/project-pages/project-omniamp.html',
+              './html-parts/project-pages/project-jquery-sofia.html',
               './html-parts/project-pages/project-infragistics-posters.html',
+              './html-parts/project-pages/project-gigs-bg.html',
               './html-parts/project-pages/project-meta-colours.html'
             ],
             dest: './',
