@@ -260,8 +260,6 @@
 		}
 	}
 
-
-
 	& .visit-project {
 		color: $main-cyan;
 
@@ -280,12 +278,44 @@
 	}
 }
 
-.vr-dash-container {
-	position: fixed;
-}
-
 img[src="images/projects/igposters/project-igposters-cooking.png"],
 img[src="images/projects/igposters/project-igposters-book.png"],
 img[src="images/projects/igposters/project-igposters-ux.png"] {
 	border-top: 2px dashed $light-gray;
 }
+
+
+/* omniamp project css */
+
+.omniamp-ani-container {
+	
+	position: relative;
+	margin-bottom: 150px;
+	height: 482px;
+	width: 780px;
+
+
+	& img {
+		animation: none;
+		position: absolute;
+		height: 482px;
+		width: 780px;
+		z-index: 100;
+	}
+
+	& .omniamp-ani {
+		z-index: 500;
+		height: 482px;
+		width: 780px;
+		position: absolute;
+		background-image: url("../images/projects/omniamp/omniamp-ani-all.svg");
+		background-size: 7200px 482px;
+		background-position: -10px 0px;
+		animation: omni-ani 2.5s infinite linear;
+		opacity: 1;
+	}
+}
+
+
+
+/* 24 32 40 48 56 64 72 */

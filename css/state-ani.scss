@@ -226,3 +226,166 @@
 		transform: scale(1, 1);
 	}
 }
+
+@keyframes omni-ani {
+	0% {
+		opacity: 1;
+		background-position: -10px 0px;
+	}
+
+	5% {
+		opacity: 0;
+		background-position: -10px 0px;
+	}
+
+	6% {
+		opacity: 0;
+		background-position: -810px 0px;
+	}
+
+	10% {
+		opacity: 1;
+		background-position: -810px 0px;
+	}
+
+	15% {
+		opacity: 0;
+		background-position: -810px 0px;
+	}
+
+	16% {
+		opacity: 0;
+		background-position: -1610px 0px;
+	}
+
+	20% {
+		opacity: 1;
+		background-position: -1610px 0px;
+	}
+
+	25% {
+		opacity: 0;
+		background-position: -1610px 0px;
+	}
+
+	26% {
+		opacity: 0;
+		background-position: -2410px 0px;
+	}
+
+	30% {
+		opacity: 1;
+		background-position: -2410px 0px;
+	}
+
+	35% {
+		opacity: 0;
+		background-position: -2410px 0px;
+	}
+
+	36% {
+		opacity: 0;
+		background-position: -3210px 0px;
+	}
+
+	40% {
+		opacity: 1;
+		background-position: -3210px 0px;
+	}
+
+	45% {
+		opacity: 0;
+		background-position: -3210px 0px;
+	}
+
+	46% {
+		opacity: 0;
+		background-position: -4010px 0px;
+	}
+
+	50% {
+		opacity: 1;
+		background-position: -4010px 0px;
+	}
+
+	55% {
+		opacity: 0;
+		background-position: -4010px 0px;
+	}
+
+	56% {
+		opacity: 0;
+		background-position: -4810px 0px;
+	}
+
+	60% {
+		opacity: 1;
+		background-position: -4810px 0px;
+	}
+
+	65% {
+		opacity: 0;
+		background-position: -4810px 0px;
+	}
+
+	66% {
+		opacity: 0;
+		background-position: -5610px 0px;
+	}
+
+	70% {
+		opacity: 1;
+		background-position: -5610px 0px;
+	}
+
+	75% {
+		opacity: 0;
+		background-position: -5610px 0px;
+	}
+
+	76% {
+		opacity: 0;
+		background-position: -6410px 0px;
+	}
+
+	80% {
+		opacity: 1;
+		background-position: -6410px 0px;
+	}
+
+	85% {
+		opacity: 0;
+		background-position: -6410px 0px;
+	}
+
+	86% {
+		opacity: 0;
+		background-position: -7210px 0px;
+	}
+
+	90% {
+		opacity: 0;
+		background-position: -7210px 0px;
+	}
+
+	91% {
+		opacity: 0;
+		background-position: -5610px 0px;
+	}
+
+	95% {
+		opacity: 1;
+		background-position: -5610px 0px;
+	}
+
+	99% {
+		opacity: 0;
+		background-position: -5610px 0px;
+	}
+	100% {
+		opacity: 0;
+		background-position: -10px 0px;
+	}
+
+
+}
