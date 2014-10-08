@@ -74,7 +74,7 @@
  
 	.logo-box {
 		text-align: center;
-		border-bottom: 1px dashed #fff;
+		border-bottom: 2px dashed rgba(0,0,0,0.12);
 	}
 
 	header,
@@ -102,5 +102,29 @@
 		margin: 0;
 		padding: 0;
 	}
+
+	.page-contacts {
+		background-color: $light-cyan;
+
+		& footer {
+			color: #fff;
+			bottom: 0;
+			text-align: center;
+			margin-bottom: 20px!important;
+		}
+
+		& .container {
+			height: auto;
+		}
+
+		& .contacts-container {
+			margin-bottom: 30px;
+			& p {
+				margin: 10px 20px 0px 20px;
+			}
+		}
+	}
+
+
 
 }
