@@ -262,6 +262,7 @@
 
 	& .visit-project {
 		color: $main-cyan;
+		margin-left: 50px;
 
 		&::after {
 			content: ' >';
@@ -276,6 +277,13 @@
 	& img {
 		margin-bottom: 150px;
 	}
+
+	& h2 {
+		margin: 20px auto;
+		text-align: center;
+		color: $main-cyan;
+	}
+
 }
 
 img[src="images/projects/igposters/project-igposters-cooking.png"],

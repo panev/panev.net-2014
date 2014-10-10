@@ -197,6 +197,10 @@ img {
 		font-size: 42px;
 	}
 
+	& h2:first-child {
+		color: $light-cyan;
+	}
+
 	& .about-go-container {
 		margin: 30px 0 0 0;
 	}
@@ -205,5 +209,4 @@ img {
 		margin-top: 30px;
 		bottom: 0px;
 	}
-
 } 
