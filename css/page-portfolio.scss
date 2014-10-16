@@ -195,7 +195,6 @@
 	position: fixed;
 
 	& h2 {
-
 		color: $main-cyan;
 		font-weight: 300;
 	}
@@ -205,14 +204,11 @@
 		color: $light-gray;
 		font-size: 0.9em;
 		margin-bottom: 25px;
+
 		&::before {
 			content: 'Compleated: ';
 			text-transform: uppercase;
 		}
-	}
-
-	& p {
-		text-align: justify;
 	}
 
 	& a {
@@ -260,12 +256,25 @@
 			content: ' >';
 		}
 	}
+	
+	& .project-info-highlighter {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		bottom: -80px;
+		left: 50%;
+		visibility: visible;
+		border-left: 3px solid $light-cyan;
+		border-top: 3px solid $light-cyan;
+		transform: rotate(45deg) translateX(-75%);
+		opacity: 0;
 
+		&.highlighter-active {
+			animation: blink 0.5s 2;
+			animation-delay: 0.3s;
+		} 
 
-/* 	&.highlighter-active {
-	animation: blink 0.35s 2;
-	animation-delay: 0.4s;
-} */
+	}
 
 }
 
@@ -321,7 +330,3 @@ img[src="images/projects/igposters/project-igposters-ux.png"] {
 		opacity: 1;
 	}
 }
-
-
-
-/* 24 32 40 48 56 64 72 */

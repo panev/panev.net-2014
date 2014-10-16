@@ -40,10 +40,10 @@ $(document).ready(function() {
          $(window).scroll(function (e) {
             if (document.body.scrollHeight == $(window).height() + $('body').scrollTop())
             {
-                $('a.back-to-portfolio').addClass('highlighted');
+                $('div.project-info-highlighter').addClass('highlighter-active');
 
             } else {
-                $('a.back-to-portfolio').removeClass('highlighted');
+                $('div.project-info-highlighter').removeClass('highlighter-active');
             }
          }); 
     }
