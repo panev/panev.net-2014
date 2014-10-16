@@ -7,21 +7,12 @@ var corsMiddleware = function(req, res, next) {
   next();
 }
 
+var mozjpeg = require('imagemin-mozjpeg');
+
   // Project configuration.
   grunt.initConfig({
     
     pkg: grunt.file.readJSON('package.json'),
-
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    },
 
     sass: {                              
       dist: {                         
@@ -120,9 +111,27 @@ var corsMiddleware = function(req, res, next) {
         path: './hello.html',
         app: 'chrome'
       }
+    },
+
+    imagemin: {                            // Task
+      static: {                          // Target
+        options: {                       // Target options
+          optimizationLevel: 3,
+          use: [mozjpeg()]
+        }
+      },
+      dynamic: {                         // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif,svg}'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
     }
 
   });
+
 
   // Loads
   grunt.loadNpmTasks('grunt-html-build');
@@ -131,13 +140,13 @@ var corsMiddleware = function(req, res, next) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-open');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Here's a grunt server task, just in case. You do need to set it up, though.
   // grunt.loadNpmTasks('grunt-contrib-connect');
 
 
   // Default tasks
-  grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'watch', 'htmlbuild']);
+  grunt.registerTask('smash', ['sass', 'autoprefixer', 'htmlbuild', 'imagemin']);
   grunt.registerTask('jedi', ['open', 'watch']);
-
 };

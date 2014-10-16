@@ -4,11 +4,6 @@ if ('ontouchstart' in window) {
 }
 
 $(document).ready(function() {
-    // inject animation classes once page is loaded
-    $(".light-cyan-shim").addClass("contacts-shim-collapse");
-    $(".contacts-info").addClass("contacts-shim-appear");
-    $(".contacts-details").addClass("contacts-shim-appear-late");
-    $(".projects-greeter").addClass("projects-greeter-appear");
 
     // add class to body for respective page
     var loc = window.location.href;
@@ -49,7 +44,7 @@ $(document).ready(function() {
     }
 
     // 100% height on contacts page
-    if($('.contacts-container').length == 1) {  
+    if($('.page-contacts').length == 1) {  
         $("html, body").addClass("such-height");
     }
 

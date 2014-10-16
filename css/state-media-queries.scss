@@ -109,7 +109,7 @@
 		padding: 65px 20px 0px 20px;
 
 		& .about-me-pic {
-			margin-top: 50px;
+			margin-bottom: 30px;
 		}
 
 		& p {
@@ -283,4 +283,10 @@
 		}
 	}
 
+}
+
+@media (max-width: 319px) { /* for smart microwave ovens and time travelers */
+	img {
+		max-width: 85%;
+	}
 }
