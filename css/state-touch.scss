@@ -1,3 +1,172 @@
+/* hello page */
+
 .touch {
 
+	& .social-sprite a {
+		margin-right: 30px;
+	}
+
+	& .about-skill {
+
+		opacity: 1;
+
+		& .skill-info {
+
+			& h2 {
+				color: $light-cyan;
+			}
+
+			p {
+				opacity: 1;
+				transform: none;
+			}
+		}
+
+		& .gray-ill {
+			opacity: 0.85;
+		}
+
+		&:hover {
+
+			& p,
+			& h2 {
+				transform: none;
+			}
+
+			& .about-ill {
+				transform: translateY(0px);
+			}
+
+			* {
+				animation: none;
+			}
+
+			& .gray-ill {
+				opacity: 0.85;
+			}
+
+			& .full-ill {
+				opacity: 0;
+			}
+
+			.brand-dot-1 {
+				background-color: #BEBEBE;
+				border: 3px solid #fff;
+				opacity: 1;
+			}
+
+			.brand-dot-2 {
+				background-color: #CCCCCC;
+				opacity: 0.7;
+			}
+
+			.brand-dot-3 {
+				border: 2px dashed #CCCCCC;
+				opacity: 0.7;
+			}
+		}
+
+	}
+
+	& .about-help-container{
+		& p,
+		&::after,
+		&::before {
+			opacity: 1;
+		}
+	}
+
 }
+
+/* portfolio page */
+
+.touch {
+
+	& .project-container {
+
+		margin-top: 100px;
+		padding-bottom: 60px;
+
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			opacity: 1;
+		}
+
+		& .gray-thumb, 
+		& .full-thumb {
+			transform: translate(-240px, -50%);
+		}
+
+		& .gray-thumb {
+			opacity: 0.7;
+		}
+
+		& .full-thumb {
+			opacity: 0;
+		}
+
+		& h2,
+		& .tags, 
+		p, 
+		.go-to-action {
+			opacity: 1;
+	 		transform: none;
+		}
+
+		&:hover {
+
+			& .gray-thumb {
+				opacity: 0.7;
+			}
+
+			& .full-thumb {
+				opacity: 0;
+			}
+
+			& h2,
+			& .tags, 
+			p, 
+			.go-to-action {
+				opacity: 1;
+		 		transform: none;
+			}
+
+			& .go-to-action {
+				animation: none;
+			}
+
+		}
+
+	}
+
+}
+
+/* contacts page would be here */
+
+
+
+/* project pages */
+
+.touch {
+
+	& .project-info {
+
+		& .visit-project {
+			margin-left: 10px;
+			padding: 10px;
+		}
+
+		& .back-to-portfolio {
+			padding: 10px;
+		}
+	}
+}
+
+
+/* misc stuff would be here */
+
+
+

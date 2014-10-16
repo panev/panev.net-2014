@@ -54,60 +54,6 @@
 	}
 }
 
-.about-help-container {
-
-	position: relative;
-	margin-top: 100px;
-	padding-bottom: 80px;
-
-	& p {
-		opacity: 0.85;
-		transition: 0.35s;
-
-		& span {
-			color: $main-cyan;
-		}
-	}
-
-	&::after,
-	&::before {
-		height: 1px;
-		width: 100%;
-		content: '';
-		display: block;
-		position: absolute;
-		transition: 0.35s;
-		opacity: 0.85;
-	}
-
-	&::before { 
-		top: 0px;
-		border-top: 1px dashed $light-gray;
-	}
-
-	&::after {
-		bottom: 0px;
-		border-bottom: 1px dashed $light-gray; 
-	}
-
-	&:hover {
-		& p,
-		&::after,
-		&::before {
-			opacity: 1;
-		}
-	}
-
-	& h2 {
-		margin: 60px 0px 60px 0px;
-	}
-}
-
-.about-go-container {
-	text-align: center;
-	margin: 160px 10px 80px 10px;
-}
-
 .about-me-pic {
 	height: 220px;
 	position: relative;
@@ -243,6 +189,7 @@ a[href="https://www.behance.net/panev"] {
 	}
 
 	&:hover {
+
 		opacity: 1;
 
 
@@ -313,7 +260,7 @@ a[href="https://www.behance.net/panev"] {
 		animation: scale-up-down 0.6s;
 		animation-delay: 1.0s
 	}
-
+ 
 	&:hover .brand-dot-1 {
 		background-color: $main-cyan;
 		animation: brand-dot-scale 2.1s infinite;
@@ -333,88 +280,7 @@ a[href="https://www.behance.net/panev"] {
 		transform-origin: center;
 		opacity: 0.7;
 	}
-
-	&:hover .good-line-1 {
-		animation: scale-up-y 0.30s;
-		animation-delay: 0.15s;
-		transform: scaleY(1.0);
-	}
-
-	&:hover .good-line-2 {
-		animation: scale-up-x 0.30s;
-		animation-delay: 0.30s;
-		transform: scaleX(1.0);
-	}
-
-	&:hover .good-cross {
-		animation: good-cross 0.5s;
-		animation-delay: 0.50s;
-		transform: rotate(0deg);
-	}
-
-	&:hover .good-buttons {
-		animation: good-buttons 0.5s, good-buttons-2 0.5s;
-		animation-delay: 0.49s, 0.50s;
-		transform: rotate(145deg);
-		opacity: 0;
-	}
-}
-
-.good-line-1,
-.good-line-2 {
-	z-index: 100;
-	background-color: $main-cyan;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: scale(0.0);
-}
-
-.good-line-1 {
-	width: 30px;
-	height: 90px;
-	margin-top: -45px;
-	margin-left: -15px;
-	transform-origin: top!important;
-}
-
-.good-line-2 {
-	width: 90px;
-	height: 30px;
-	margin-top: -15px;
-	margin-left: -45px;
-	transform-origin: right!important;
-}
-
-.good-cross {
-	transform: rotate(-45deg);
-	height: 90px;
-	width: 90px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -45px;
-	margin-left: -45px;
-	z-index: 120;
-}
-
-.good-buttons {
-	z-index: 80;
-	transition: 0.50s;
-}
-
-.good-circle {
-	background-color: #fff;
-	border-radius: 50%;
-	width: 146px;
-	height: 146px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -73px;
-	margin-left: -73px;
-	z-index: 50;
-}
+} 
 
 
 .brand-dot-1,
@@ -529,4 +395,59 @@ a[href="https://www.behance.net/panev"] {
 	left: 179px;
 	width: 18px;
 	height: 18px;
+}
+
+
+.about-help-container {
+
+	position: relative;
+	margin-top: 100px;
+	padding-bottom: 80px;
+
+	& p {
+		opacity: 0.85;
+		transition: 0.35s;
+
+		& span {
+			color: $main-cyan;
+		}
+	}
+
+	&::after,
+	&::before {
+		height: 1px;
+		width: 100%;
+		content: '';
+		display: block;
+		position: absolute;
+		transition: 0.35s;
+		opacity: 0.85;
+	}
+
+	&::before { 
+		top: 0px;
+		border-top: 1px dashed $light-gray;
+	}
+
+	&::after {
+		bottom: 0px;
+		border-bottom: 1px dashed $light-gray; 
+	}
+
+	&:hover {
+		& p,
+		&::after,
+		&::before {
+			opacity: 1;
+		}
+	}
+
+	& h2 {
+		margin: 60px 0px 60px 0px;
+	}
+}
+
+.about-go-container {
+	text-align: center;
+	margin: 160px 10px 80px 10px;
 }

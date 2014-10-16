@@ -17,10 +17,6 @@
 	color: $main-cyan;
 }
 
-.project-container:last-child {
-	margin-bottom: 100px;
-}
-
 .project-container {
 	position: relative;
 	height: 240px;
@@ -254,10 +250,6 @@
 			content: '< ';
 		}
 
-		&.highlighted {
-			animation: blink 0.35s 2;
-			animation-delay: 0.4s;
-		}
 	}
 
 	& .visit-project {
@@ -268,6 +260,12 @@
 			content: ' >';
 		}
 	}
+
+
+/* 	&.highlighter-active {
+	animation: blink 0.35s 2;
+	animation-delay: 0.4s;
+} */
 
 }
 
