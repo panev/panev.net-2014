@@ -52,8 +52,7 @@ var mozjpeg = require('imagemin-mozjpeg');
               './html-parts/project-pages/project-omniamp.html',
               './html-parts/project-pages/project-jquery-sofia.html',
               './html-parts/project-pages/project-infragistics-posters.html',
-              './html-parts/project-pages/project-gigs-bg.html',
-              './html-parts/project-pages/project-meta-colours.html'
+              './html-parts/project-pages/project-gigs-bg.html'
             ],
             dest: './',
             options: {

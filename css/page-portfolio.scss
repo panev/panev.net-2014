@@ -99,6 +99,9 @@
 		top: 90px;
 		transform: translate(0%, 45%);
 		transition: 0.3s;
+		& a {
+			color: $main-cyan;
+		}
 	}
 
 	& .go-to-action {
@@ -149,10 +152,11 @@
 
 
 /* project thumbs individual sprite selectors */
-#project-meta-colours {
+#project-soon {
 	& .gray-thumb, .full-thumb {
 		width: 260px;
-		background-image: url('../images/projects/metacolors/meta-double-thumb.png');
+		height: 180px;
+		background-image: url('../images/projects/soon-double-thumb.png');
 	}
 }
 
