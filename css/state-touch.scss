@@ -166,7 +166,11 @@
 }
 
 
-/* misc stuff would be here */
+/* misc stuff */
 
+.touch {
 
-
+	& .go-to-top {
+		display: block;
+	}
+}

@@ -127,6 +127,25 @@ body ::-moz-selection {
 		}
 }
 
+.go-to-top {
+
+	@extend .go-to-action;
+	display: none;
+	margin-top: 60px;
+
+	&:hover {
+		border-bottom: 1px solid transparent;
+	}
+
+	& span {
+		transform: rotate(-90deg) translate(0px, 10px);
+	}
+
+	&:hover span {
+		transform: rotate(-90deg) translate(10px, 10px);
+	}
+}
+
 @font-face {
     font-family: 'bebas-regular';
     src: url('../fonts/BebasNeue-webfontREG.woff') format('woff');
