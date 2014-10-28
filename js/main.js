@@ -22,11 +22,11 @@ $(document).ready(function() {
 
         // header collapse/expand logic
         $(window).scroll(function (e) {
-            if ($('body').scrollTop() > 0
-                && document.body.scrollHeight !== $(window).height() + $('body').scrollTop()) 
+            if ($(document).scrollTop() > 0
+                && document.body.scrollHeight !== ($(window).height() + $(document).scrollTop())) 
             {
                 $('header').addClass('collapsed');    
-            } else if ($('body').scrollTop() == 0) {
+            } else if ($(document).scrollTop() == 0) {
                 $('header').removeClass('collapsed');    
             }
         })
