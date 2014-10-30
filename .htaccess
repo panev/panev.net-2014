@@ -8,7 +8,8 @@ RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
 RewriteRule ^(.*)$ /ie.html [R=301,L]
 
 # Pretty URLs
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # ----------------------------------------------------------------------
 # | Expires headers                                                    |
