@@ -1,6 +1,14 @@
 RewriteEngine On
 
+# hello is index
 RedirectMatch 301 /panevnet/index.html /panevnet/hello.html
+
+# IE SUPPORT
+RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
+RewriteRule ^(.*)$ /ie.html [R=301,L]
+
+# Pretty URLs
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # ----------------------------------------------------------------------
 # | Expires headers                                                    |
