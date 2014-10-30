@@ -116,6 +116,10 @@
 	 		transform: none;
 		}
 
+		p {
+			display: none;
+		}
+
 		&:hover {
 
 			& .gray-thumb {
@@ -172,5 +176,10 @@
 
 	& .go-to-top {
 		display: block;
+		text-align: center;
+	}
+
+	footer {
+		margin-top: 60px;
 	}
 }
