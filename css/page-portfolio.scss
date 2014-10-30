@@ -286,15 +286,20 @@
 	margin-top: 60px;
 
 	& img {
-		margin-bottom: 150px;
+		margin-bottom: 120px;
 	}
 
 	& h2 {
-		margin: 20px auto;
+		margin: 0px auto 20px auto;
 		text-align: center;
 		color: $main-cyan;
 	}
 
+	p {
+		text-align: center;
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
 }
 
 img[src="images/projects/igposters/project-igposters-cooking.png"],
@@ -312,7 +317,6 @@ img[src="images/projects/igposters/project-igposters-ux.png"] {
 	margin-bottom: 150px;
 	height: 482px;
 	width: 780px;
-
 
 	& img {
 		animation: none;
