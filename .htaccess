@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # hello is index
-RedirectMatch 301 /panevnet/index.html /panevnet/hello.html
+RedirectMatch 301 /index.html /hello
 
 # IE SUPPORT
 RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
@@ -9,7 +9,7 @@ RewriteRule ^(.*)$ /ie.html [R=301,L]
 
 # Pretty URLs
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # ----------------------------------------------------------------------
 # | Expires headers                                                    |
