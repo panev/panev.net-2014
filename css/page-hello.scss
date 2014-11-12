@@ -99,7 +99,7 @@
 
 	& span {
 		background-image: url('../images/social-sprite.svg');
-		background-size: 160px 160px;
+		background-size: 220px 160px;
 		width: 60px;
 		height: 60px;
 		display: inline-block;
@@ -138,6 +138,17 @@ a[href="https://www.behance.net/panev"] {
 
 	& .full-social {
 		background-position: -100px -75px;
+	}
+}
+
+a[href="https://github.com/panev"] {
+
+	& .gray-social {
+		background-position: -150px -25px;
+	}
+
+	& .full-social {
+		background-position: -150px -75px;
 	}
 }
 
