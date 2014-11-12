@@ -3,13 +3,13 @@ RewriteEngine On
 # hello is index
 RedirectMatch 301 /index.html /hello
 
-# IE SUPPORT
-RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
-RewriteRule ^(.*)$ /ie.html [R=301,L]
-
 # Pretty URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} "MSIE [6-8]" [NC]
+RewriteRule . http://browsehappy.com/ [L,R=301]
 
 # ----------------------------------------------------------------------
 # | Expires headers                                                    |
