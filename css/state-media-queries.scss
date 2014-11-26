@@ -283,6 +283,11 @@
 		}
 	}
 
+	.about-help-container,
+	.project-container { /* due to IE's pseudo-elements issues with transforms */
+		overflow-x: hidden; 
+	}
+
 }
 
 @media (max-width: 319px) { /* for smart-microwave-ovens and time travelers */

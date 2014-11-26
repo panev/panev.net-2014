@@ -128,7 +128,6 @@ var mozjpeg = require('imagemin-mozjpeg');
         }]
       }
     }
-
   });
 
 

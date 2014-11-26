@@ -244,8 +244,6 @@
 
 	& .back-to-portfolio {
 
-		margin-right: 5px;
-
 		&::before { 
 			content: '< ';
 		}
@@ -253,8 +251,8 @@
 	}
 
 	& .visit-project {
+		
 		color: $main-cyan;
-		margin-left: 50px;
 
 		&::after {
 			content: ' >';
