@@ -43,7 +43,7 @@
 	
 	& h2 {
 		color: $main-cyan;
-		margin-bottom: 20px;
+		margin-bottom: 20px; 
 		animation: fade-in70 1.4s;
 	}
 
@@ -51,6 +51,11 @@
 		color: $dark-gray;
 		text-align: justify;
 		animation: fade-in70 1.4s;
+	}
+
+	a {
+		color: $main-cyan;
+		text-decoration: underline;
 	}
 }
 
