@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     if (loc.indexOf('hello') !== -1) {
         $('body').addClass('page-hello');
-        
+
     } else if (loc.indexOf('portfolio') !== -1) {
         $('body').addClass('page-portfolio');
     } else if (loc.indexOf('contacts') !== -1) {
@@ -23,11 +23,11 @@ $(document).ready(function() {
         // header collapse/expand logic
         $(window).scroll(function (e) {
             if ($(document).scrollTop() > 0
-                && document.body.scrollHeight !== ($(window).height() + $(document).scrollTop())) 
+                && document.body.scrollHeight !== ($(window).height() + $(document).scrollTop()))
             {
-                $('header').addClass('collapsed');    
+                $('header').addClass('collapsed');
             } else if ($(document).scrollTop() == 0) {
-                $('header').removeClass('collapsed');    
+                $('header').removeClass('collapsed');
             }
         })
 
@@ -40,11 +40,11 @@ $(document).ready(function() {
             } else {
                 $('div.project-info-highlighter').removeClass('highlighter-active');
             }
-         }); 
+         });
     }
 
     // 100% height on contacts page
-    if($('.page-contacts').length == 1) {  
+    if($('.page-contacts').length == 1) {
         $("html, body").addClass("such-height");
     }
 

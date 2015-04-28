@@ -95,9 +95,9 @@
 			opacity: 1;
 		}
 
-		& .gray-thumb, 
+		& .gray-thumb,
 		& .full-thumb {
-			transform: translate(-240px, -50%);
+			transform: translate(-30px, -50%);
 		}
 
 		& .gray-thumb {
@@ -109,15 +109,11 @@
 		}
 
 		& h2,
-		& .tags, 
-		p, 
+		& .tags,
+		p,
 		.go-to-action {
 			opacity: 1;
 	 		transform: none;
-		}
-
-		p {
-			display: none;
 		}
 
 		&:hover {
@@ -131,8 +127,8 @@
 			}
 
 			& h2,
-			& .tags, 
-			p, 
+			& .tags,
+			p,
 			.go-to-action {
 				opacity: 1;
 		 		transform: none;
