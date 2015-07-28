@@ -39,11 +39,11 @@
 	background-color: #fff;
 	opacity: 1;
 	display: inline-block;
-	padding: 65px 0 45px 0; 
-	
+	padding: 65px 0 45px 0;
+
 	& h2 {
 		color: $main-cyan;
-		margin-bottom: 20px; 
+		margin-bottom: 20px;
 		animation: fade-in70 1.4s;
 	}
 
@@ -75,7 +75,7 @@
 		height: 60px;
 		display: inline-block;
 		position: relative;
- 
+
 		& .gray-social {
 			opacity: 1;
 			transform: scale(1);
@@ -85,7 +85,7 @@
 			opacity: 0;
 			transform: scale(0);
 		}
- 
+
 		&:hover {
 
 			& .full-social {
@@ -193,6 +193,8 @@ a[href="https://github.com/panev"] {
 			transform: translateY(10px);
 			transition: 0.3s;
 			opacity: 1;
+			font-size: 18px;
+			text-align: left;
 		}
 	}
 
@@ -238,46 +240,46 @@ a[href="https://github.com/panev"] {
 		animation: skill-cog-rotate 3.6s infinite linear;
 	}
 
-	&:hover .dot-1 { 
+	&:hover .dot-1 {
 		animation: scale-up-down 0.5s;
 		animation-delay: 0s;
 	}
 
-	&:hover .dot-2 { 
+	&:hover .dot-2 {
 		animation: scale-up-down 0.75s;
 		animation-delay: 0.3s;
 	}
 
-	&:hover .dot-3, { 
+	&:hover .dot-3, {
 		animation: scale-up-down 1.2s;
 		animation-delay: 0.55s;
 	}
 
-	&:hover .dot-4 { 
+	&:hover .dot-4 {
 		animation: scale-up-down 0.5s;
 		animation-delay: 0.55s;
 	}
 
-	&:hover .dot-5 { 
+	&:hover .dot-5 {
 		animation: scale-up-down 0.45s;
 		animation-delay: 0.7s;
 	}
 
-	&:hover .dot-6 { 
+	&:hover .dot-6 {
 		animation: scale-up-down 0.7s;
 		animation-delay: 1.1s
 	}
 
-	&:hover .dot-7 { 
+	&:hover .dot-7 {
 		animation: scale-up-down 1.1s;
 		animation-delay: 1.15s
 	}
 
-	&:hover .dot-8 { 
+	&:hover .dot-8 {
 		animation: scale-up-down 0.6s;
 		animation-delay: 1.0s
 	}
- 
+
 	&:hover .brand-dot-1 {
 		background-color: $main-cyan;
 		animation: brand-dot-scale 2.1s infinite;
@@ -297,7 +299,7 @@ a[href="https://github.com/panev"] {
 		transform-origin: center;
 		opacity: 0.7;
 	}
-} 
+}
 
 
 .brand-dot-1,
@@ -346,7 +348,7 @@ a[href="https://github.com/panev"] {
 .dot-5,
 .dot-6,
 .dot-7,
-.dot-8 { 
+.dot-8 {
 	background-color: $main-cyan;
 	position: absolute;
 	border-radius: 50%;
@@ -354,7 +356,7 @@ a[href="https://github.com/panev"] {
 	height: 50px;
 	z-index: 100;
 	transform: scale(0.0);
-	animation-iteration-count: infinite; 
+	animation-iteration-count: infinite;
 	opacity: 0;
 }
 
@@ -377,7 +379,7 @@ a[href="https://github.com/panev"] {
 	left: 23px;
 	width: 22px;
 	height: 22px;
-} 
+}
 
 .dot-4 {
 	top: 143px;
@@ -441,14 +443,14 @@ a[href="https://github.com/panev"] {
 		opacity: 0.85;
 	}
 
-	&::before { 
+	&::before {
 		top: 0px;
 		border-top: 1px dashed $light-gray;
 	}
 
 	&::after {
 		bottom: 0px;
-		border-bottom: 1px dashed $light-gray; 
+		border-bottom: 1px dashed $light-gray;
 	}
 
 	&:hover {
