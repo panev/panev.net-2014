@@ -171,6 +171,7 @@ a[href="https://github.com/panev"] {
 		opacity: 0.65;
 		transition: 0.5s;
 		transform: translateX(0px);
+		position: relative;
 
 		& img {
 			position: absolute;
@@ -206,6 +207,49 @@ a[href="https://github.com/panev"] {
 		opacity: 0.65;
 	}
 
+	& .vial-dot {
+		opacity: 0;
+		background-color: #fff;
+		border-radius: 50%;
+    position: absolute;
+    display: block;
+    z-index: 999;
+		transition: 0.3s;
+		transform: translateY(0px);
+	}
+
+	& .vial-dot-1 {
+		top: 152px;
+		left: 99px;
+		width: 11px;
+		height: 11px;
+		animation-delay: 0.2s;
+	}
+
+	& .vial-dot-2 {
+		top: 158px;
+		left: 112px;
+		width: 6px;
+		height: 6px;
+		animation-delay: 1s;
+	}
+
+	& .vial-dot-3 {
+		top: 144px;
+    left: 107px;
+    width: 7px;
+    height: 7px;
+		animation-delay: 0.5s;
+	}
+
+	& .vial-dot-4 {
+		top: 167px;
+    left: 108px;
+    width: 4px;
+    height: 4px;
+		animation-delay: 1.7s;
+	}
+
 	&:hover {
 
 		opacity: 1;
@@ -213,7 +257,30 @@ a[href="https://github.com/panev"] {
 
 
 		& .about-ill {
+
 			transform: translateY(-25px);
+
+			& .vial-dot {
+				animation: vial-up 0.9s infinite;
+			}
+
+			& .vial-dot-1 {
+				animation-delay: 0.2s;
+			}
+
+			& .vial-dot-2 {
+				animation-delay: 1s;
+			}
+
+			& .vial-dot-3 {
+				animation-delay: 0.5s;
+			}
+
+			& .vial-dot-4 {
+
+				animation-delay: 1.7s;
+			}
+
 		}
 
 		p {
@@ -232,7 +299,7 @@ a[href="https://github.com/panev"] {
 		}
 
 		& .full-ill {
-			opacity: 1;
+			opacity: 0.85;
 		}
 	}
 
@@ -241,42 +308,42 @@ a[href="https://github.com/panev"] {
 	}
 
 	&:hover .dot-1 {
-		animation: scale-up-down 0.5s;
+		animation: scale-up-down 0.5s infinite;
 		animation-delay: 0s;
 	}
 
 	&:hover .dot-2 {
-		animation: scale-up-down 0.75s;
+		animation: scale-up-down 0.75s infinite;
 		animation-delay: 0.3s;
 	}
 
 	&:hover .dot-3, {
-		animation: scale-up-down 1.2s;
+		animation: scale-up-down 1.2s infinite;
 		animation-delay: 0.55s;
 	}
 
 	&:hover .dot-4 {
-		animation: scale-up-down 0.5s;
+		animation: scale-up-down 0.5s infinite;
 		animation-delay: 0.55s;
 	}
 
 	&:hover .dot-5 {
-		animation: scale-up-down 0.45s;
+		animation: scale-up-down 0.45s infinite;
 		animation-delay: 0.7s;
 	}
 
 	&:hover .dot-6 {
-		animation: scale-up-down 0.7s;
+		animation: scale-up-down 0.7s infinite;
 		animation-delay: 1.1s
 	}
 
 	&:hover .dot-7 {
-		animation: scale-up-down 1.1s;
+		animation: scale-up-down 1.1s infinite;
 		animation-delay: 1.15s
 	}
 
 	&:hover .dot-8 {
-		animation: scale-up-down 0.6s;
+		animation: scale-up-down 0.6s infinite;
 		animation-delay: 1.0s
 	}
 

@@ -1,7 +1,7 @@
 // touch detection
-if ('ontouchstart' in window) {
-    document.documentElement.className += " touch"
-}
+//if ('ontouchstart' in window) {
+  //  document.documentElement.className += " touch"
+//}
 
 $(document).ready(function() {
 
