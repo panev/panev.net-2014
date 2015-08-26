@@ -158,7 +158,7 @@ a[href="https://github.com/panev"] {
 
 .about-skill {
 	padding-bottom: 45px;
-	margin: 0 20px;
+	margin: 0px 20px 100px 0px;
 	display: inline-block;
 	opacity: 0.85;
 	transition: 0.5s;
@@ -167,7 +167,7 @@ a[href="https://github.com/panev"] {
 	& .about-ill {
 		height: 250px;
 		width: 220px;
-		margin-left: 0;
+		margin: 0 auto;
 		opacity: 0.65;
 		transition: 0.5s;
 		transform: translateX(0px);

@@ -5,7 +5,7 @@
 	margin-right: auto;
 	width: 1120px;
 }
- 
+
 /* Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 
@@ -14,7 +14,7 @@
 .nmi-3,
 .nmi-4,
 .nmi-5,
-.nmi-6, 
+.nmi-6,
 .nmi-7,
 .nmi-8,
 .nmi-9,
@@ -22,7 +22,7 @@
 .nmi-11,
 .nmi-12,
 .nmi-13,
-.nmi-14 { 
+.nmi-14 {
 	display: inline;
 	float: left;
 	position: relative;
@@ -125,55 +125,55 @@
 
 
 .apex-this .push-1 {
-	left: 80px;
+	margin-left: 80px;
 }
 
 .apex-this .push-2 {
-	left: 160px;
+	margin-left: 160px;
 }
 
 .apex-this .push-3 {
-	left: 240px;
+	margin-left: 240px;
 }
 
 .apex-this .push-4 {
-	left: 320px;
+	margin-left: 320px;
 }
 
 .apex-this .push-5 {
-	left: 400px;
+	margin-left: 400px;
 }
 
 .apex-this .push-6 {
-	left: 480px;
+	margin-left: 480px;
 }
 
 .apex-this .push-7 {
-	left: 560px;
+	margin-left: 560px;
 }
 
 .apex-this .push-8 {
-	left: 640px;
+	margin-left: 640px;
 }
 
 .apex-this .push-9 {
-	left: 720px;
+	margin-left: 720px;
 }
 
 .apex-this .push-10 {
-	left: 800px;
+	margin-left: 800px;
 }
 
 .apex-this .push-11 {
-	left: 880px;
+	margin-left: 880px;
 }
 
 .apex-this .push-12 {
-	left: 960px;
+	margin-left: 960px;
 }
 
 .apex-this .push-13 {
-	left: 1040px;
+	margin-left: 1040px;
 }
 
 
@@ -183,55 +183,55 @@
 
 
 .apex-this .pull-1 {
-	left: -80px;
+	margin-left: -80px;
 }
 
 .apex-this .pull-2 {
-	left: -160px;
+	margin-left: -160px;
 }
 
 .apex-this .pull-3 {
-	left: -240px;
+	margin-left: -240px;
 }
 
 .apex-this .pull-4 {
-	left: -320px;
+	margin-left: -320px;
 }
 
 .apex-this .pull-5 {
-	left: -400px;
+	margin-left: -400px;
 }
 
 .apex-this .pull-6 {
-	left: -480px;
+	margin-left: -480px;
 }
 
 .apex-this .pull-7 {
-	left: -560px;
+	margin-left: -560px;
 }
 
 .apex-this .pull-8 {
-	left: -640px;
+	margin-left: -640px;
 }
 
 .apex-this .pull-9 {
-	left: -720px;
+	margin-left: -720px;
 }
 
 .apex-this .pull-10 {
-	left: -800px;
+	margin-left: -800px;
 }
 
 .apex-this .pull-11 {
-	left: -880px;
+	margin-left: -880px;
 }
 
 .apex-this .pull-12 {
-	left: -960px;
+	margin-left: -960px;
 }
 
 .apex-this .pull-13 {
-	left: -1040px;
+	margin-left: -1040px;
 }
 
 
@@ -266,5 +266,5 @@
 }
 
 .clearfix {
-  zoom: 1; /*will cause css invalid css */
+  zoom: 1; /*will cause invalid css */
 }
