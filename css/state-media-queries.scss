@@ -1,4 +1,4 @@
-@media (max-width: 1100px) { 
+@media (max-width: 1100px) {
 
 	/* misc */
 
@@ -36,15 +36,15 @@
 		margin-right: 0;
 	}
 
-	.apex-this .push-1, 
-	.apex-this .push-2, 
-	.apex-this .push-3, 
-	.apex-this .push-4, 
-	.apex-this .push-5, 
-	.apex-this .push-6, 
-	.apex-this .push-7, 
-	.apex-this .push-8, 
-	.apex-this .push-9, 
+	.apex-this .push-1,
+	.apex-this .push-2,
+	.apex-this .push-3,
+	.apex-this .push-4,
+	.apex-this .push-5,
+	.apex-this .push-6,
+	.apex-this .push-7,
+	.apex-this .push-8,
+	.apex-this .push-9,
 	.apex-this .push-10,
 	.apex-this .push-11,
 	.apex-this .push-12,
@@ -52,7 +52,7 @@
 	.apex-this .push-14 {
 		left: 0px;
 	}
- 
+
 	.apex-this,
 	.apex-this .contacts-container {
 		width: 100%;
@@ -61,7 +61,7 @@
 
 
 	/* nav and header */
- 
+
 	.logo-box {
 		text-align: center;
 		border-bottom: 2px dashed rgba(0,0,0,0.12);
@@ -117,12 +117,16 @@
 		}
 	}
 
+	.skill-container {
+		border: 0!important; /* preventive, avoiding long selectors */
+	}
+
 	.about-skills-container {
 
 		padding: 0 20px;
 
 		& .about-skill {
-			
+
 			& .about-ill {
 				margin: 0 auto;
 			}
@@ -136,23 +140,6 @@
 					margin: 0 auto;
 				}
 			}
-		}
-	}
-
-	.about-help-container {
-
-		padding: 0 20px 80px 20px;
-		text-align: center;
-
-		&::before,
-		&::after {
-			width: 90%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-
-		& p {
-			max-width: 600px;
 		}
 	}
 
@@ -252,7 +239,7 @@
 		}
 	}
 
-	.contacts-info, 
+	.contacts-info,
 	.contacts-details {
 		top: 0px;
 	}
@@ -269,7 +256,7 @@
 			max-width: 780px;
 			margin: 0 auto;
 		}
-		
+
 	}
 
 	.inner-projects-container {
@@ -285,7 +272,7 @@
 
 	.about-help-container,
 	.project-container { /* due to IE's pseudo-elements issues with transforms */
-		overflow-x: hidden; 
+		overflow-x: hidden;
 	}
 
 }
