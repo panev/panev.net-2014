@@ -68,8 +68,7 @@
 }
 
 .social-sprite {
-	margin-left: -10px;
-	margin-top: 10px;
+	margin: 10px 0px 30px -15px;
 	animation: fade-in70 1.4s;
 
 	& a {
@@ -186,7 +185,7 @@ a[href="https://github.com/panev"] {
 
 			& .vial-dot {
 				animation: vial-up 0.9s infinite;
-			} 
+			}
 
 			& .vial-dot-1 {
 				animation-delay: 0.2s;
