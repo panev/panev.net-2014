@@ -102,6 +102,11 @@
 			color: $main-cyan;
 		}
 
+		& span {
+			opacity: 0;
+			transition: 0.3s;
+		}
+
 	}
 
 	& .go-to-action {
@@ -142,6 +147,14 @@
 	& p {
 		opacity: 1.0;
 		top: 100px;
+
+		& span {
+			opacity: 1;
+
+			&::before {
+				opacity: 0;
+			}
+		}
 	}
 
 	& .go-to-action {
