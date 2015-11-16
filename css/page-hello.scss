@@ -1,3 +1,76 @@
+/*"be back soon stuff"*/
+
+.be-back-soon {
+		background: rgba(32,195,243,0.7);
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		z-index: 999999;
+		animation: bbs-appear 1.5s;
+
+		& h1,
+		& a {
+			color: #fff;
+			text-transform: uppercase;
+			font-family: $bebas;
+			transform: translate(-50%, -50%);
+			display: block;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			text-align: center;
+			text-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+		}
+
+		& a {
+			top: 43%!important;
+		}
+}
+
+@media (max-width: 720px) {
+	.be-back-soon a {
+		top: 52%!important
+	}
+}
+
+.bbs-ani-wrap * {
+	animation: centrofuga 60s!important;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(1,.11,.23,1);
+	animation-delay: 0.5s!important;
+
+}
+
+@keyframes centrofuga {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(900deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes bbs-appear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+body {
+	overflow: hidden!important;
+}
+
+
+
 .hello-splash {
 	width: 100%;
 	height: 460px;
